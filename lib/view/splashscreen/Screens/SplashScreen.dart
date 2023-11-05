@@ -1,5 +1,4 @@
-import 'package:ecommercegiveji/view/app.dart';
-import 'package:ecommercegiveji/view/authScreen/login_Page.dart';
+import 'package:ecommercegiveji/view/authScreen/signup_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../utils/image_const.dart';
@@ -20,7 +19,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   void changescreen() {
     Future.delayed(const Duration(seconds: 2), () {
-      Get.to(() => const LoginScreen());
+      Get.off(() => const SignupScreen());
     });
   }
 

@@ -69,6 +69,9 @@ const svgGrid = "assets/svgIcons/grid.svg";
 const svgHome = "assets/svgIcons/home.svg";
 const svgCart = "assets/svgIcons/shopping-cart.svg";
 const svgUser = "assets/svgIcons/user.svg";
+const svgGoogle = "assets/svgIcons/google.svg";
+const svgFacebook = "assets/svgIcons/facebook.svg";
+const svgMail = "assets/svgIcons/mail.svg";
 
 //images
 const imgBackground = "assets/icons/bg.png";
