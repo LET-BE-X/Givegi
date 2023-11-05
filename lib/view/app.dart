@@ -22,37 +22,12 @@ class Home extends StatelessWidget {
     var controller = Get.put(HomeController());
     var navbody = [
       HomePage(),
+      HomePage(),
       const CartScreen(),
       const NotificationScreen(),
       const ProfileScreen()
     ];
 
-    var navbaritem = [
-      BottomNavigationBarItem(
-          icon: Image.asset(
-            home,
-            width: 30,
-          ),
-          label: "Home"),
-      BottomNavigationBarItem(
-          icon: Image.asset(
-            Cart,
-            width: 30,
-          ),
-          label: "Cart"),
-      BottomNavigationBarItem(
-          icon: Image.asset(
-            notification,
-            width: 30,
-          ),
-          label: "Notofication"),
-      BottomNavigationBarItem(
-          icon: Image.asset(
-            profile,
-            width: 30,
-          ),
-          label: "Profile")
-    ];
     return Scaffold(
       body: Column(
         children: [
@@ -63,21 +38,22 @@ class Home extends StatelessWidget {
       ),
       bottomNavigationBar: Obx(
             () => CurvedNavigationBar(
-              height: 60,
-              color: Colors.white,
-              animationCurve: Curves.easeOut,
-              animationDuration: Duration.microsecondsPerSecond.microseconds,
-              index: controller.currentNavIndex.value,
-         buttonBackgroundColor: Colors.white,
-          backgroundColor: Colors.white,
+              height: 70,
+          index: controller.currentNavIndex.value,
+          buttonBackgroundColor: Colors.lightGreen,
+          backgroundColor: Colors.transparent,
           items: [
             Image.asset(
+              category,
+              width: 40,
+            ),
+            Image.asset(
+              Cart,
+              width: 30,
+            ),
+            Image.asset(
                   home,
-                  width: 40,
-                ),
-          Image.asset(
-                  Cart,
-                  width: 40,
+                  width: 50,
                 ),
             Image.asset(
                   notification,
