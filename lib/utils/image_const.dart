@@ -63,7 +63,7 @@ const icTwitterLogo = "assets/icons/twitter_logo.png";
 const icWallet = "assets/icons/wallet.png";
 const icWhiteTick = "assets/icons/white_tick.png";
 const icWholeSale = "assets/icons/wholesale.png";
-
+// main iconss
 const svgBell = "assets/svgIcons/bell.svg";
 const svgGrid = "assets/svgIcons/grid.svg";
 const svgHome = "assets/svgIcons/home.svg";
