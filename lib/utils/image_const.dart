@@ -2,16 +2,16 @@
 
 import 'package:flutter/material.dart';
 
-const logo= "assets/icons/logo.png";
-const splashBg= "assets/icons/Splash_screen_Bg.png";
-const authbg= "assets/icons/Auth_bg.png";
-const home="assets/icons/home.png";
-const notification="assets/icons/Notification.png";
-const gift="assets/icons/gift.png";
-const category="assets/icons/Category.png";
-const profile="assets/icons/profile.png";
-const google="assets/icons/google.png";
-const facebook="assets/icons/facebook.png";
+const logo = "assets/icons/logo.png";
+const splashBg = "assets/icons/Splash_screen_Bg.png";
+const authbg = "assets/icons/Auth_bg.png";
+const home = "assets/icons/home.png";
+const notification = "assets/icons/Notification.png";
+const gift = "assets/icons/gift.png";
+const category = "assets/icons/category.png";
+const profile = "assets/icons/Profile.png";
+const google = "assets/icons/google.png";
+const facebook = "assets/icons/facebook.png";
 const profilepic = "assets/icons/profilepic.png";
 const icAdd = "assets/icons/add.png";
 const icAppLogo = "assets/icons/app_logo.png";
@@ -52,7 +52,8 @@ const icProfile = "assets/icons/profile.png";
 const icRefund = "assets/icons/refund.png";
 const icSearch = "assets/icons/search.png";
 const icShop = "assets/icons/shop.png";
-const icSplashBg = "assets/icons/splash_login_registration_background_image.png";
+const icSplashBg =
+    "assets/icons/splash_login_registration_background_image.png";
 const icSquareLogo = "assets/icons/square_logo.png";
 const icTodaysDeal = "assets/icons/todays_deal.png";
 const icTopCategories = "assets/icons/top_categories.png";
@@ -62,7 +63,6 @@ const icTwitterLogo = "assets/icons/twitter_logo.png";
 const icWallet = "assets/icons/wallet.png";
 const icWhiteTick = "assets/icons/white_tick.png";
 const icWholeSale = "assets/icons/wholesale.png";
-
 
 //images
 const imgBackground = "assets/icons/bg.png";
@@ -141,7 +141,6 @@ const imgStripe = "assets/images/stripe.png";
 const imgTwocheckout = "assets/images/twocheckout.png";
 const imgVogue = "assets/images/vogue.png";
 const imgWallet = "assets/images/wallet.png";
-
 
 const Color kTextBoxColor = Color(0xffE8EDF0);
 
