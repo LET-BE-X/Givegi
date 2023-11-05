@@ -64,6 +64,12 @@ const icWallet = "assets/icons/wallet.png";
 const icWhiteTick = "assets/icons/white_tick.png";
 const icWholeSale = "assets/icons/wholesale.png";
 
+const svgBell = "assets/svgIcons/bell.svg";
+const svgGrid = "assets/svgIcons/grid.svg";
+const svgHome = "assets/svgIcons/home.svg";
+const svgCart = "assets/svgIcons/shopping-cart.svg";
+const svgUser = "assets/svgIcons/user.svg";
+
 //images
 const imgBackground = "assets/icons/bg.png";
 const imgB1 = "assets/images/b1.jpeg";

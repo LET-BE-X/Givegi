@@ -1,12 +1,9 @@
-import 'package:curved_navigation_bar/curved_navigation_bar.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:ecommercegiveji/utils/image_const.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
-import 'package:velocity_x/velocity_x.dart';
-
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import '../controller/app_controller.dart';
-import '../utils/image_const.dart';
 import 'HomeScreen/Screens/Home_Screens.dart';
 import 'Notification/Screens/Notification_screens.dart';
 import 'ProfileScreen/Screens/Profile_screens.dart';
@@ -36,40 +33,34 @@ class Home extends StatelessWidget {
       ),
       bottomNavigationBar: Obx(
         () => CurvedNavigationBar(
-          
           animationDuration: Duration(milliseconds: 100),
           height: 60,
           index: controller.currentNavIndex.value,
           buttonBackgroundColor: Colors.lightGreen,
           backgroundColor: Colors.transparent,
           items: [
-            Image.asset(
-              category,
-              width: 40,
-            ),
-            Image.asset(
-              Cart,
-              width: 30,
-              
-            ),
-            Image.asset(
-              home,
-              width: 50,
-            ),
-            Image.asset(
-              notification,
-              width: 40,
-            ),
-            Image.asset(
-              profile,
-              width: 40,
-            ),
+            _buildSvgIcon(svgGrid, 0),
+            _buildSvgIcon(svgCart, 1),
+            _buildSvgIcon(svgHome, 2),
+            _buildSvgIcon(svgBell, 3),
+            _buildSvgIcon(svgUser, 4),
           ],
           onTap: (value) {
             controller.currentNavIndex.value = value;
           },
         ),
       ),
+    );
+  }
+
+  Widget _buildSvgIcon(String svgPath, int index) {
+    var controller = Get.put(HomeController());
+    return SvgPicture.asset(
+      svgPath,
+      height: 35,
+      color: controller.currentNavIndex.value == index
+          ? Colors.white
+          : Colors.grey,
     );
   }
 }
