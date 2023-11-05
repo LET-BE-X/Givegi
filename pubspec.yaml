@@ -39,6 +39,7 @@ dependencies:
   velocity_x:
   curved_navigation_bar:
   dot_navigation_bar:
+  animated_splash_screen:
 
 dev_dependencies:
   flutter_test:

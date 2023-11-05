@@ -63,29 +63,30 @@ class Home extends StatelessWidget {
       ),
       bottomNavigationBar: Obx(
             () => CurvedNavigationBar(
-         buttonBackgroundColor: Colors.white54,
-          backgroundColor: Colors.green,
+              height: 60,
+              color: Colors.white,
+              animationCurve: Curves.easeOut,
+              animationDuration: Duration.microsecondsPerSecond.microseconds,
+              index: controller.currentNavIndex.value,
+         buttonBackgroundColor: Colors.white,
+          backgroundColor: Colors.white,
           items: [
             Image.asset(
                   home,
-                  width: 30,
+                  width: 40,
                 ),
-
           Image.asset(
                   Cart,
-                  width: 30,
+                  width: 40,
                 ),
-
             Image.asset(
                   notification,
-                  width: 30,
+                  width: 40,
                 ),
-
-             Image.asset(
+            Image.asset(
                   profile,
-                  width: 30,
+                  width: 40,
                 ),
-
           ],
           onTap: (value) {
             controller.currentNavIndex.value = value;
