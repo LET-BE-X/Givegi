@@ -39,6 +39,10 @@ dependencies:
   velocity_x:
   curved_navigation_bar:
   dot_navigation_bar:
+  animated_splash_screen:
+  flutter_svg: ^2.0.9
+  flutter_screenutil: ^5.9.0
+  gap:
 
 dev_dependencies:
   flutter_test:
@@ -67,6 +71,7 @@ flutter:
     - assets/
     - assets/icons/
     - assets/images/
+    - assets/svgIcons/
 #  assets:
 #    - assets/
 #    - assets/icons/
