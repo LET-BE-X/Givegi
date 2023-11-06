@@ -1,7 +1,7 @@
 import 'dart:math';
 import 'package:ecommercegiveji/utils/color_constant.dart';
 import 'package:ecommercegiveji/utils/image_const.dart';
-import 'package:ecommercegiveji/view/authScreen/signup.dart';
+import 'package:ecommercegiveji/view/app.dart';
 import 'package:ecommercegiveji/view/splashscreen/Widgets/customText.dart';
 import 'package:ecommercegiveji/view/splashscreen/Widgets/custom_button.dart';
 import 'package:ecommercegiveji/view/splashscreen/Widgets/custom_stack.dart';
@@ -11,6 +11,7 @@ import 'package:get/get.dart';
 import 'package:velocity_x/velocity_x.dart';
 import '../splashscreen/Widgets/custon_textfield.dart';
 import '../splashscreen/Widgets/google_facebook.dart';
+import 'login_page.dart';
 
 class SignupScreen extends StatelessWidget {
   const SignupScreen({super.key});
@@ -38,16 +39,14 @@ class SignupScreen extends StatelessWidget {
                       OutlineInputBorder(borderSide: BorderSide(width: 0.8)),
                   focusedBorder: OutlineInputBorder())),
           30.h.heightBox,
-          Obx(
-            () => MyButton(
+           MyButton(
               ontap: () {
-                Get.off(() => LoginScreen());
+                Get.off(() => Home());
               },
               height: max(30.w, 60),
               width: double.infinity,
               text: 'Create Account',
             ),
-          ),
           40.h.heightBox,
           Center(
             child: customText(

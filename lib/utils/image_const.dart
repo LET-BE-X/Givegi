@@ -1,7 +1,7 @@
 // icon
 
 import 'package:flutter/material.dart';
-
+const cartbag="assets/icons/cartbag.png";
 const logo = "assets/icons/logo.png";
 const splashBg = "assets/icons/Splash_screen_Bg.png";
 const authbg = "assets/icons/Auth_bg.png";

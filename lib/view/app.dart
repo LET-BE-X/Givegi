@@ -17,8 +17,8 @@ class Home extends StatelessWidget {
     var controller = Get.put(HomeController());
     var navbody = [
       HomePage(),
-      HomePage(),
       const CartScreen(),
+      HomePage(),
       const NotificationScreen(),
       const ProfileScreen()
     ];
