@@ -13,7 +13,7 @@ Widget myStack({Widget? child}) {
         child: Image.asset(authbg, fit: BoxFit.cover),
       ),
       Positioned(
-          top: 250,
+          top: 220,
           right: -20,
           left: -20,
           child: Container(

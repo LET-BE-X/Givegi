@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:velocity_x/velocity_x.dart';
-
-import '../../../utils/image_const.dart';
 import 'customText.dart';
 
 class Google_facebook extends StatelessWidget {
@@ -26,7 +24,7 @@ class Google_facebook extends StatelessWidget {
       onTap: ontap,
       child: Container(
         height: 50.46.h,
-        width: width ?? 166.67.w,
+        width: width ?? 150.w,
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(8),
             border: Border.all(
@@ -43,7 +41,7 @@ class Google_facebook extends StatelessWidget {
             customText(
               color: Colors.black,
               myText: text,
-              size: 20.w,
+              size: 18.h,
               fontWeight: FontWeight.w500,
             )
           ],
