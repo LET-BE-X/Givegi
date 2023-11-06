@@ -18,6 +18,7 @@ class LoginScreen extends StatelessWidget {
       ),
       body: myStack(
           child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           CustomTextfield(
             decoration: InputDecoration(
@@ -28,22 +29,32 @@ class LoginScreen extends StatelessWidget {
           CustomTextfield(
             decoration: InputDecoration(suffixIcon: Icon(Icons.visibility)),
           ),
-          20.heightBox,
+          15.heightBox,
+          GestureDetector(
+            onTap: () {},
+            child: customText(
+              color: kGreenColor,
+              myText: 'Forgot Password?',
+              size: 19,
+              fontWeight: FontWeight.w500,
+            ),
+          ),
+          30.heightBox,
           MyButton(
             ontap: () {},
             height: 50,
-            width: 343,
+            width: 344,
             text: 'Login',
           ),
-          20.heightBox,
+          25.heightBox,
           customText(
             color: kGreenColor,
-            myText: 'Don\'t have an account?Signup',
-            size: 20,
+            myText: ' Don\'t have an account?Signup',
+            size: 18,
             fontWeight: FontWeight.w500,
           )
         ],
-      ).marginOnly(left: 30, right: 30, top: 20)),
+      ).marginOnly(left: 50, right: 50, top: 30)),
     );
   }
 }
