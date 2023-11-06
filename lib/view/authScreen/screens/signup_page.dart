@@ -50,16 +50,16 @@ class _SignupScreenState extends State<SignupScreen> {
               ontap: () {
                 Get.to(() => Home());
               },
-              height: max(30.w, 60),
+              height: 55,
               width: double.infinity,
               text: 'Create Account',
             ),
-            40.h.heightBox,
+            20.heightBox,
             Center(
               child: customText(
                 color: Colors.grey,
                 myText: 'or continue with',
-                size: 25.w,
+                size: 20,
               ),
             ),
             25.h.heightBox,
@@ -84,16 +84,16 @@ class _SignupScreenState extends State<SignupScreen> {
                 )
               ],
             ),
-            40.h.heightBox,
+            30.heightBox,
             customText(
               color: Colors.black,
               myText:
                   'By creating an account, you agree with\nGiveji’s Terms and Conditions and Privacy Policy',
-              size: 18,
+              size: 15,
               align: TextAlign.center,
             )
           ],
-        ).marginOnly(left: 65.w, right: 60.w, top: 30.h),
+        ).marginOnly(left: 65, right: 60, top: 30),
       )),
     );
   }

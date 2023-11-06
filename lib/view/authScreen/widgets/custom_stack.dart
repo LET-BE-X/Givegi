@@ -1,7 +1,7 @@
 import 'package:ecommercegiveji/utils/color_constant.dart';
 import 'package:ecommercegiveji/utils/image_const.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 
 Widget myStack({Widget? child}) {
   return Stack(
@@ -17,7 +17,7 @@ Widget myStack({Widget? child}) {
           right: -20,
           left: -20,
           child: Container(
-            height: 600.h,
+            height: 516,
             width: double.infinity,
             decoration: BoxDecoration(
               color: kWhiteColor,
