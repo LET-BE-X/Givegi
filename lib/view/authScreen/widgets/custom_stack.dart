@@ -2,7 +2,6 @@ import 'package:ecommercegiveji/utils/color_constant.dart';
 import 'package:ecommercegiveji/utils/image_const.dart';
 import 'package:flutter/material.dart';
 
-
 Widget myStack({Widget? child}) {
   return Stack(
     children: [
@@ -13,7 +12,7 @@ Widget myStack({Widget? child}) {
         child: Image.asset(authbg, fit: BoxFit.cover),
       ),
       Positioned(
-          top: 220,
+          top: 280,
           right: -20,
           left: -20,
           child: Container(

@@ -1,4 +1,5 @@
 import 'package:ecommercegiveji/utils/color_constant.dart';
+import 'package:ecommercegiveji/view/authScreen/screens/forgot_pass.dart';
 import 'package:ecommercegiveji/view/authScreen/widgets/customText.dart';
 import 'package:ecommercegiveji/view/authScreen/widgets/custom_button.dart';
 import 'package:ecommercegiveji/view/authScreen/widgets/custom_stack.dart';
@@ -31,7 +32,9 @@ class LoginScreen extends StatelessWidget {
           ),
           15.heightBox,
           GestureDetector(
-            onTap: () {},
+            onTap: () {
+              Get.to(() => ForgetPass());
+            },
             child: customText(
               color: kGreenColor,
               myText: 'Forgot Password?',
