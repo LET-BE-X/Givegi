@@ -13,6 +13,8 @@ class NewArival extends StatelessWidget {
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
       child:  Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: List.generate(6, (index) => Card(
             elevation: 7,
             child: Container(
@@ -24,7 +26,7 @@ class NewArival extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Image.asset(featureproductimage[index],width: 130,fit: BoxFit.cover,),
+                      Center(child: Image.asset(featureproductimage[index],width: 130,height: 150,fit: BoxFit.fill,)),
                       10.heightBox,
                       featureproductname[index].text.bold.size(22).make(),
                       Gap(10),

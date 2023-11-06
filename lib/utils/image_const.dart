@@ -150,6 +150,12 @@ const imgStripe = "assets/images/stripe.png";
 const imgTwocheckout = "assets/images/twocheckout.png";
 const imgVogue = "assets/images/vogue.png";
 const imgWallet = "assets/images/wallet.png";
+const printedshirt="assets/images/printed.png";
+const swetshirt="assets/images/swetshirt.png";
+const bag="assets/images/bags.png";
+const oversized="assets/images/oversizedtshirts.png";
+const kids="assets/images/kids.png";
+const slaves="assets/images/slaves.png";
 
 const Color kTextBoxColor = Color(0xffE8EDF0);
 

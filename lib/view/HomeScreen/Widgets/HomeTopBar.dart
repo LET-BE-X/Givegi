@@ -12,12 +12,12 @@ class HomeTopBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 175,
+      height: 170,
       width: double.infinity,
       color: hometopcolor,
       child: Column(
         children: [
-          Gap(28),
+          Gap(25),
           Image.asset(logo,height: 50,width: 90,),
           Gap(10),
           Row(

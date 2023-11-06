@@ -38,3 +38,5 @@ const featureproductprice = [
   "NPR: 12,853",
   "NPR: 1,285"
 ];
+const Categoriesproductimage=[printedshirt,swetshirt,bag,oversized,kids,slaves];
+const categoriesproductname=["Printed T-shirts","Sweatshirts & hoodies","bags","oversized T-shirts","kids fashion","Full sleeve t-shirts"];

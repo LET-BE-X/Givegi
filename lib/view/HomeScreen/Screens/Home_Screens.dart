@@ -3,9 +3,11 @@ import 'package:ecommercegiveji/utils/color_constant.dart';
 import 'package:ecommercegiveji/view/HomeScreen/Widgets/HomeTopBar.dart';
 import 'package:ecommercegiveji/view/HomeScreen/Widgets/New_Arival.dart';
 import 'package:ecommercegiveji/view/HomeScreen/Widgets/Swiper.dart';
+import 'package:ecommercegiveji/view/HomeScreen/Widgets/popular_categories.dart';
 import 'package:ecommercegiveji/view/HomeScreen/Widgets/topcategory.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:velocity_x/velocity_x.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -17,7 +19,7 @@ class HomePage extends StatelessWidget {
         elevation: 0,
         backgroundColor: hometopcolor,
         bottom: const PreferredSize(
-          preferredSize: Size.fromHeight(150),
+          preferredSize: Size.fromHeight(130),
           child: HomeTopBar(),
         ),
       ),
@@ -46,7 +48,14 @@ class HomePage extends StatelessWidget {
               ],
             ),
             Gap(20),
-            NewArival()
+            NewArival(),
+            Gap(20),
+            Padding(
+              padding: EdgeInsets.only(right: 120),
+              child: Text("Popular Categories",style: TextStyle(fontSize: 33,fontWeight: FontWeight.w500),),
+            ),
+            Gap(20),
+            PopularCategories()
 
           ],
         )),
