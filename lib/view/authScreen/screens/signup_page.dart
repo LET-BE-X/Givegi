@@ -1,6 +1,7 @@
 import 'dart:math';
 import 'package:ecommercegiveji/utils/color_constant.dart';
 import 'package:ecommercegiveji/utils/image_const.dart';
+import 'package:ecommercegiveji/view/app.dart';
 import 'package:ecommercegiveji/view/authScreen/screens/login_page.dart';
 
 import 'package:ecommercegiveji/view/authScreen/widgets/customText.dart';
@@ -47,7 +48,7 @@ class _SignupScreenState extends State<SignupScreen> {
             30.h.heightBox,
             MyButton(
               ontap: () {
-                Get.to(() => LoginScreen());
+                Get.to(() => Home());
               },
               height: max(30.w, 60),
               width: double.infinity,
