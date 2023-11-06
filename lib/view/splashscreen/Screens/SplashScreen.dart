@@ -1,4 +1,4 @@
-import 'package:ecommercegiveji/view/authScreen/signup_page.dart';
+import 'package:ecommercegiveji/view/authScreen/screens/signup_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../utils/image_const.dart';

@@ -1,6 +1,6 @@
 import 'package:ecommercegiveji/utils/color_constant.dart';
-import 'package:ecommercegiveji/view/splashscreen/Widgets/customText.dart';
-import 'package:ecommercegiveji/view/splashscreen/Widgets/custom_stack.dart';
+import 'package:ecommercegiveji/view/authScreen/widgets/customText.dart';
+import 'package:ecommercegiveji/view/authScreen/widgets/custom_stack.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -13,6 +13,7 @@ class LoginScreen extends StatelessWidget {
         title: customText(color: kWhiteColor, myText: 'Login', size: 20),
       ),
       body: myStack(child: Column(
+
         
       )),
     );
