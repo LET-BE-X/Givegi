@@ -43,6 +43,7 @@ dependencies:
   flutter_svg: ^2.0.9
   flutter_screenutil: ^5.9.0
   gap:
+  carousel_slider:
 
 dev_dependencies:
   flutter_test:
