@@ -22,113 +22,114 @@ class _EditProfileState extends State<EditProfile> {
   Widget build(BuildContext context) {
     Get.put(ProfileController());
     var controller = Get.find<ProfileController>();
-    return Scaffold(
-      appBar: AppBar(
-        toolbarHeight: 70,
-        backgroundColor: Colors.white,
-        title: Row(
-          children: [
-            Gap(66),
-            Text("Edit Profile",style: TextStyle(fontSize: 28,color: Colors.black,fontWeight: FontWeight.w600),),
-          ],
+    return Obx(()=>Scaffold(
+        appBar: AppBar(
+          toolbarHeight: 70,
+          backgroundColor: Colors.white,
+          title: Row(
+            children: [
+              Gap(66),
+              Text("Edit Profile",style: TextStyle(fontSize: 28,color: Colors.black,fontWeight: FontWeight.w600),),
+            ],
+          ),
+
         ),
+        body: SingleChildScrollView(
+          scrollDirection: Axis.vertical,
+          child: Column(
+            children: [
+              Gap(20),
+              Center(
+                child: Stack(children: [
+                  Container(
+                    width: 130,
+                    height: 130,
+                    decoration: BoxDecoration(
+                      border: Border.all(width: 4, color: Colors.white),
 
-      ),
-      body: SingleChildScrollView(
-        scrollDirection: Axis.vertical,
-        child: Column(
-          children: [
-            Gap(20),
-            Center(
-              child: Stack(children: [
-                Container(
-                  width: 130,
-                  height: 130,
-                  decoration: BoxDecoration(
-                    border: Border.all(width: 4, color: Colors.white),
-
-                    shape: BoxShape.circle,
-                  ),
-                  child: ClipOval(
-                    child: controller.profileimgpath.isEmpty
-                        ? Image.asset(
-                      profilepic,
-                      fit: BoxFit.fill,
-                    ) // Provide a default asset path
-                        : Image.file(
-                      File(controller.profileimgpath.value),
-                      fit: BoxFit.fill,
+                      shape: BoxShape.circle,
+                    ),
+                    child: ClipOval(
+                      child: controller.profileimgpath.isEmpty
+                          ? Image.asset(
+                        profilepic,
+                        fit: BoxFit.fill,
+                      ) // Provide a default asset path
+                          : Image.file(
+                        File(controller.profileimgpath.value),
+                        fit: BoxFit.fill,
+                      ),
                     ),
                   ),
-                ),
-                Positioned(
-                    bottom: 0,
-                    right: 0,
-                    child: Container(
-                      height: 40,
-                      width: 50,
-                      decoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                          border: Border.all(
-                            width: 2,
+                  Positioned(
+                      bottom: 0,
+                      right: 0,
+                      child: Container(
+                        height: 40,
+                        width: 50,
+                        decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            border: Border.all(
+                              width: 2,
+                              color: Colors.white,
+                            ),
+                            color: Colors.green),
+                        child: Center(
+                          child: IconButton(
+                            onPressed: () {
+                              controller.changeProfile(context);
+                            },
+                            icon: Icon(Icons.edit,color: Colors.white,size: 20),
                             color: Colors.white,
                           ),
-                          color: Colors.green),
-                      child: Center(
-                        child: IconButton(
-                          onPressed: () {
-                            controller.changeProfile(context);
-                          },
-                          icon: Icon(Icons.edit,color: Colors.white,size: 20),
-                          color: Colors.white,
                         ),
-                      ),
-                    ))
-              ]),),
-            Gap(10),
-            Customtextbox(hint: "First Name",ispass: false),
-            Gap(10),
-            Customtextbox(hint: "Last Name",ispass: false),
-            Gap(10),
-            Customtextbox(hint: "Email Id",ispass: false),
-            Gap(10),
-            Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Customtextbox(hint: "password",ispass: true),
-                Gap(10),
-                "Change Password".text.start.size(16).color(Colors.green).make()
-              ],
-            ),
-            Gap(10),
-            Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Customtextbox(hint: "Phone Number",ispass: false,type: TextInputType.number),
-                Gap(10),
-                "Change Phone Number".text.start.size(16).color(Colors.green).make()
-              ],
-            ),
-            Gap(10),
-            Customtextbox( hint: DateFormat.yMd().format(_selecteddate),ispass:false,widget: IconButton(
-              icon: Icon(Icons.calendar_month_outlined),
-              onPressed: (){
-                _getDateFromUser();
+                      ))
+                ]),),
+              Gap(10),
+              Customtextbox(hint: "First Name",ispass: false),
+              Gap(10),
+              Customtextbox(hint: "Last Name",ispass: false),
+              Gap(10),
+              Customtextbox(hint: "Email Id",ispass: false),
+              Gap(10),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Customtextbox(hint: "password",ispass: true),
+                  Gap(10),
+                  "Change Password".text.start.size(16).color(Colors.green).make()
+                ],
+              ),
+              Gap(10),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Customtextbox(hint: "Phone Number",ispass: false,type: TextInputType.number),
+                  Gap(10),
+                  "Change Phone Number".text.start.size(16).color(Colors.green).make()
+                ],
+              ),
+              Gap(10),
+              Customtextbox( hint: DateFormat.yMd().format(_selecteddate),ispass:false,widget: IconButton(
+                icon: Icon(Icons.calendar_month_outlined),
+                onPressed: (){
+                  _getDateFromUser();
 
-              },
-            ),),
-            Gap(10),
-            Container(
-              width: double.infinity,
-                height: 70,
-                child: ElevatedButton(onPressed: (){}, child: Text("Save Change",style: TextStyle(fontSize: 28,fontWeight: FontWeight.bold),),))
-          ],
+                },
+              ),),
+              Gap(10),
+              Container(
+                width: double.infinity,
+                  height: 70,
+                  child: ElevatedButton(onPressed: (){}, child: Text("Save Change",style: TextStyle(fontSize: 28,fontWeight: FontWeight.bold),),))
+            ],
+          ),
+
         ),
 
       ),
-
     );
 
   }

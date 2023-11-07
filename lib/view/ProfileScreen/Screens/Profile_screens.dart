@@ -1,6 +1,9 @@
 
 
+import 'package:ecommercegiveji/view/ProfileScreen/Screens/Addresses.dart';
 import 'package:ecommercegiveji/view/ProfileScreen/Screens/Edit_Profile.dart';
+import 'package:ecommercegiveji/view/ProfileScreen/Screens/My%20Order.dart';
+import 'package:ecommercegiveji/view/ProfileScreen/Screens/Paymentd.dart';
 import 'package:ecommercegiveji/view/ProfileScreen/Widgets/profile_widgits.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
@@ -30,6 +33,12 @@ class ProfileScreen extends StatelessWidget {
                     onTap: () {
                       if(index==0){
                         Get.to(()=>EditProfile());
+                      }else if(index==1){
+                        Get.to(()=>Orders());
+                      }else if(index==2){
+                        Get.to(()=>Payment());
+                      }else if(index==3){
+                        Get.to(()=>Address());
                       }
                     },
                     title: profilebuttons[index]

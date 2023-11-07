@@ -45,5 +45,4 @@ const profilebuttons = [
   "My Orders",
   "My Payments",
   "my Adresses",
-  "My Wallet",
 ];
