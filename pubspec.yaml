@@ -45,6 +45,9 @@ dependencies:
   gap:
   carousel_slider:
   image_picker:
+  date_picker_timeline:
+  intl:
+  flutter_verification_code: ^1.1.7
 
 
 dev_dependencies:

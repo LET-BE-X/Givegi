@@ -19,7 +19,7 @@ class ProfileScreen extends StatelessWidget {
 
     return  Column(
         children: [
-          Profilephoto(),
+          Profilephoto(Pagename: "Profile"),
           Gap(10),
           ListView.separated(
               shrinkWrap: true,

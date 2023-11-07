@@ -1,9 +1,6 @@
 import 'dart:math';
 import 'package:ecommercegiveji/utils/color_constant.dart';
 import 'package:ecommercegiveji/utils/image_const.dart';
-import 'package:ecommercegiveji/view/app.dart';
-import 'package:ecommercegiveji/view/authScreen/screens/login_page.dart';
-
 import 'package:ecommercegiveji/view/authScreen/widgets/customText.dart';
 import 'package:ecommercegiveji/view/authScreen/widgets/custom_button.dart';
 import 'package:ecommercegiveji/view/authScreen/widgets/custom_stack.dart';
@@ -13,6 +10,7 @@ import 'package:get/get.dart';
 import 'package:velocity_x/velocity_x.dart';
 import '../widgets/custon_textfield.dart';
 import '../widgets/google_facebook.dart';
+import 'newAcc_page.dart';
 
 class SignupScreen extends StatefulWidget {
   const SignupScreen({super.key});
@@ -48,7 +46,7 @@ class _SignupScreenState extends State<SignupScreen> {
             30.h.heightBox,
             MyButton(
               ontap: () {
-                Get.to(() => LoginScreen());
+                Get.to(() => NewAccScreen());
               },
               height: 55,
               width: double.infinity,
@@ -84,7 +82,7 @@ class _SignupScreenState extends State<SignupScreen> {
                 )
               ],
             ),
-            30.heightBox,
+            20.heightBox,
             customText(
               color: Colors.black,
               myText:
