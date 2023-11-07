@@ -10,7 +10,8 @@ import '../../../controller/profile_controller.dart';
 import '../../../utils/image_const.dart';
 
 class Profilephoto extends StatelessWidget {
-  const Profilephoto({Key? key}) : super(key: key);
+  final String Pagename;
+  const Profilephoto({Key? key,required this.Pagename}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -28,8 +29,8 @@ class Profilephoto extends StatelessWidget {
                  Row(
                   children: [
                     Gap(150),
-                     const Text(
-                       "Profile",
+                      Text(
+                      "$Pagename",
                        style: TextStyle(fontSize: 26,fontWeight: FontWeight.bold),
                      ),
                     Gap(105),
