@@ -1,4 +1,5 @@
 import 'package:ecommercegiveji/utils/image_const.dart';
+import 'package:ecommercegiveji/view/More/screens/More_screens.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
@@ -16,9 +17,9 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     var controller = Get.put(HomeController());
     var navbody = [
-      HomePage(),
+      const MoreScreen(),
       const CartScreen(),
-      HomePage(),
+      const HomePage(),
       const NotificationScreen(),
       const ProfileScreen()
     ];
@@ -39,7 +40,7 @@ class Home extends StatelessWidget {
             animationDuration: Duration(milliseconds: 100),
             height: 60,
             index: controller.currentNavIndex.value,
-            buttonBackgroundColor: Colors.lightGreen,
+            buttonBackgroundColor: Colors.green,
             backgroundColor: Colors.transparent,
             items: [
               _buildSvgIcon(svgGrid, 0),

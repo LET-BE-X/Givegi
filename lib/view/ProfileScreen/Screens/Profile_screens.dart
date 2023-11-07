@@ -20,7 +20,7 @@ class ProfileScreen extends StatelessWidget {
     return  Column(
         children: [
           Profilephoto(),
-          Gap(40),
+          Gap(10),
           ListView.separated(
               shrinkWrap: true,
               itemBuilder: (BuildContext context, int index) {
@@ -37,7 +37,7 @@ class ProfileScreen extends StatelessWidget {
                         .fontFamily(Vx.cyanHex50)
                         .make(),
                     // subtitle: ,
-                    trailing: Icon(Icons.arrow_forward_ios_outlined),
+                    trailing: Icon(Icons.arrow_forward_ios_outlined,size: 15,),
                   ),
                 );
               },
@@ -46,7 +46,7 @@ class ProfileScreen extends StatelessWidget {
                   padding:  EdgeInsets.only(left: 20, right: 20),
                   child: Divider(
                     color: Color(0xffD9D9D9),
-                    height: 20,
+                    height: 10,
                   ),
                 );
               },

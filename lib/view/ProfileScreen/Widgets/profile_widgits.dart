@@ -27,15 +27,16 @@ class Profilephoto extends StatelessWidget {
                 ),
                  Row(
                   children: [
-                    Gap(130),
+                    Gap(150),
                      const Text(
                        "Profile",
-                       style: TextStyle(fontSize: 32),
+                       style: TextStyle(fontSize: 26,fontWeight: FontWeight.bold),
                      ),
-                    Gap(95),
+                    Gap(105),
                     InkWell(child: CircleAvatar(
+                      radius: 15,
                       backgroundColor: Colors.purple,
-                      child: Icon(Icons.exit_to_app),),onTap: (){},)
+                      child: Icon(Icons.exit_to_app,size: 20,),),onTap: (){},)
                   ],
                 ),
                 SizedBox(
@@ -66,21 +67,23 @@ class Profilephoto extends StatelessWidget {
                       bottom: 0,
                       right: 0,
                       child: Container(
-                        height: 50,
+                        height: 40,
                         width: 50,
                         decoration: BoxDecoration(
                             shape: BoxShape.circle,
                             border: Border.all(
-                              width: 4,
+                              width: 2,
                               color: Colors.white,
                             ),
-                            color: Colors.blue),
-                        child: IconButton(
-                          onPressed: () {
-                            controller.changeProfile(context);
-                          },
-                          icon: Icon(Icons.edit),
-                          color: Colors.white,
+                            color: Colors.green),
+                        child: Center(
+                          child: IconButton(
+                            onPressed: () {
+                              controller.changeProfile(context);
+                            },
+                            icon: Icon(Icons.edit,color: Colors.white,size: 20),
+                            color: Colors.white,
+                          ),
                         ),
                       ))
                 ]),
@@ -89,13 +92,13 @@ class Profilephoto extends StatelessWidget {
                 ),
                 Text(
                   "Username",
-                  style: TextStyle(fontSize: 24,fontWeight: FontWeight.w700),
+                  style: TextStyle(fontSize: 18,fontWeight: FontWeight.w700),
                 ),
                 SizedBox(
                   height: 10,
                 ),
                 Text(
-                  "9811000000",style: TextStyle(fontSize: 18),
+                  "9811000000",style: TextStyle(fontSize: 14),
 
                 )
               ],
