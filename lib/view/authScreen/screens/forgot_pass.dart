@@ -1,5 +1,7 @@
 import 'package:ecommercegiveji/utils/color_constant.dart';
+import 'package:ecommercegiveji/view/app.dart';
 import 'package:ecommercegiveji/view/authScreen/widgets/customText.dart';
+import 'package:ecommercegiveji/view/authScreen/widgets/custom_button.dart';
 import 'package:ecommercegiveji/view/authScreen/widgets/custom_stack.dart';
 import 'package:ecommercegiveji/view/authScreen/widgets/custon_textfield.dart';
 import 'package:flutter/material.dart';
@@ -16,19 +18,31 @@ class ForgetPass extends StatefulWidget {
 class _ForgetPassState extends State<ForgetPass> {
   @override
   Widget build(BuildContext context) {
-    return myStack(
-        child: Column(
-      children: [
-        customText(
-            color: kGreenColor,
-            myText:
-                'Please enter your email to receive a\n reset password link',
-            size: 18),
-        50.heightBox,
-        CustomTextfield(
-          decoration: InputDecoration(hintText: 'E-mail Id'),
-        )
-      ],
-    ).marginOnly(left: 40, right: 40, top: 40));
+    return Scaffold(
+      body: myStack(
+          child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          customText(
+              align: TextAlign.center,
+              color: kGreenColor,
+              myText:
+                  'Please enter your email to receive a\n reset password link',
+              size: 18),
+          40.heightBox,
+          CustomTextfield(
+            decoration: InputDecoration(hintText: 'E-mail Id'),
+          ),
+          30.heightBox,
+          MyButton(
+              ontap: () {
+                Get.to(() => Home());
+              },
+              height: 55,
+              text: 'Submit',
+              width: 343)
+        ],
+      ).marginOnly(left: 50, right: 50, top: 40)),
+    );
   }
 }
