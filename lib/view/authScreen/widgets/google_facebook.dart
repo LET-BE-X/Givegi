@@ -9,7 +9,7 @@ class Google_facebook extends StatelessWidget {
   double? width;
   String asset;
   String text;
-  void Function() ontap;
+  void Function()? ontap;
   Google_facebook({
     Key? key,
     this.width,
