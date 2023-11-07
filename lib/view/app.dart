@@ -32,22 +32,26 @@ class Home extends StatelessWidget {
         ],
       ),
       bottomNavigationBar: Obx(
-        () => CurvedNavigationBar(
-          animationDuration: Duration(milliseconds: 100),
-          height: 60,
-          index: controller.currentNavIndex.value,
-          buttonBackgroundColor: Colors.lightGreen,
-          backgroundColor: Colors.transparent,
-          items: [
-            _buildSvgIcon(svgGrid, 0),
-            _buildSvgIcon(svgCart, 1),
-            _buildSvgIcon(svgHome, 2),
-            _buildSvgIcon(svgBell, 3),
-            _buildSvgIcon(svgUser, 4),
-          ],
-          onTap: (value) {
-            controller.currentNavIndex.value = value;
-          },
+        () => Card(
+          elevation: 10,
+          child: CurvedNavigationBar(
+
+            animationDuration: Duration(milliseconds: 100),
+            height: 60,
+            index: controller.currentNavIndex.value,
+            buttonBackgroundColor: Colors.lightGreen,
+            backgroundColor: Colors.transparent,
+            items: [
+              _buildSvgIcon(svgGrid, 0),
+              _buildSvgIcon(svgCart, 1),
+              _buildSvgIcon(svgHome, 2),
+              _buildSvgIcon(svgBell, 3),
+              _buildSvgIcon(svgUser, 4),
+            ],
+            onTap: (value) {
+              controller.currentNavIndex.value = value;
+            },
+          ),
         ),
       ),
     );

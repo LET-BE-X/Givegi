@@ -1,4 +1,5 @@
 import 'package:ecommercegiveji/utils/color_constant.dart';
+import 'package:ecommercegiveji/view/app.dart';
 import 'package:ecommercegiveji/view/authScreen/screens/forgot_pass.dart';
 import 'package:ecommercegiveji/view/authScreen/widgets/customText.dart';
 import 'package:ecommercegiveji/view/authScreen/widgets/custom_button.dart';
@@ -44,7 +45,9 @@ class LoginScreen extends StatelessWidget {
           ),
           30.heightBox,
           MyButton(
-            ontap: () {},
+            ontap: () {
+              Get.to(()=>Home());
+            },
             height: 50,
             width: 344,
             text: 'Login',

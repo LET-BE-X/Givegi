@@ -40,3 +40,10 @@ const featureproductprice = [
 ];
 const Categoriesproductimage=[printedshirt,swetshirt,bag,oversized,kids,slaves];
 const categoriesproductname=["Printed T-shirts","Sweatshirts & hoodies","bags","oversized T-shirts","kids fashion","Full sleeve t-shirts"];
+const profilebuttons = [
+  "Edit Profile",
+  "My Orders",
+  "My Payments",
+  "my Adresses",
+  "My Wallet",
+];

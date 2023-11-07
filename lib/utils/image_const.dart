@@ -38,7 +38,6 @@ const icHeadphone = "assets/icons/headphone.png";
 const icHeart = "assets/icons/heart.png";
 const icHome = "assets/icons/home.png";
 const icLogin = "assets/icons/login.png";
-const icLogout = "assets/icons/logout.png";
 const icMessages = "assets/icons/messages.png";
 const icMinus = "assets/icons/minus.png";
 const icMore = "assets/icons/more.png";
@@ -63,6 +62,7 @@ const icTwitterLogo = "assets/icons/twitter_logo.png";
 const icWallet = "assets/icons/wallet.png";
 const icWhiteTick = "assets/icons/white_tick.png";
 const icWholeSale = "assets/icons/wholesale.png";
+const logout="assets/icons/logout.png";
 // main iconss
 const svgBell = "assets/svgIcons/bell.svg";
 const svgGrid = "assets/svgIcons/grid.svg";
