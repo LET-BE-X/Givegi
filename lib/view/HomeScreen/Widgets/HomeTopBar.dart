@@ -12,12 +12,12 @@ class HomeTopBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 175,
+      height: 170,
       width: double.infinity,
       color: hometopcolor,
       child: Column(
         children: [
-          Gap(28),
+          Gap(25),
           Image.asset(logo,height: 50,width: 90,),
           Gap(10),
           Row(
@@ -31,10 +31,11 @@ class HomeTopBar extends StatelessWidget {
                   style: TextStyle(color: Colors.black),
                   decoration: InputDecoration(
                       border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10),
+                          borderRadius: BorderRadius.circular(15),
                           borderSide: BorderSide.none),
                       prefixIcon: Icon(
                         Icons.search,
+                        color: Colors.green,
                         size: 30,
                       ),
                       suffixIconColor: Colors.green,
