@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 
 class CustomTextfield extends StatelessWidget {
   InputDecoration? decoration;
-  CustomTextfield({
+  CustomTextfield( {
     Key? key,
-    this.decoration,
+   this.decoration
   }) : super(key: key);
 
   @override
