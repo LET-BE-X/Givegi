@@ -120,14 +120,14 @@ class _EditProfileState extends State<EditProfile> {
                 },
               ),),
               Gap(10),
-              Container(
-                width: double.infinity,
-                  height: 70,
-                  child: ElevatedButton(onPressed: (){}, child: Text("Save Change",style: TextStyle(fontSize: 28,fontWeight: FontWeight.bold),),))
             ],
           ),
 
         ),
+      bottomSheet: Container(
+          width: double.infinity,
+          height: 70,
+          child: ElevatedButton(onPressed: (){}, child: Text("Save Change",style: TextStyle(fontSize: 28,fontWeight: FontWeight.bold),),)),
 
       ),
     );

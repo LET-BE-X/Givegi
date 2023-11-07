@@ -46,3 +46,7 @@ const profilebuttons = [
   "My Payments",
   "my Adresses",
 ];
+const orders=["Your order #10011 has been dispatched",
+  "Your order #FI9072 has been dispatched",
+  "Your order #FI9057 delivery is nearby"
+];

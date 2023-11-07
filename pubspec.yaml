@@ -47,7 +47,10 @@ dependencies:
   image_picker:
   date_picker_timeline:
   intl:
-  flutter_verification_code: ^1.1.7
+  flutter_verification_code:
+#  google_maps_flutter:
+#  dio:
+#  flutter_polyline_points:
 
 
 dev_dependencies:
