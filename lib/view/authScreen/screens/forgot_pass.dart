@@ -24,7 +24,7 @@ class _ForgetPassState extends State<ForgetPass> {
             myText:
                 'Please enter your email to receive a\n reset password link',
             size: 18),
-        50.heightBox,
+        10.heightBox,
         CustomTextfield(
           decoration: InputDecoration(hintText: 'E-mail Id'),
         )

@@ -31,10 +31,11 @@ class HomeTopBar extends StatelessWidget {
                   style: TextStyle(color: Colors.black),
                   decoration: InputDecoration(
                       border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10),
+                          borderRadius: BorderRadius.circular(15),
                           borderSide: BorderSide.none),
                       prefixIcon: Icon(
                         Icons.search,
+                        color: Colors.green,
                         size: 30,
                       ),
                       suffixIconColor: Colors.green,

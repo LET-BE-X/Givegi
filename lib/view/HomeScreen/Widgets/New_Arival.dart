@@ -23,11 +23,11 @@ class NewArival extends StatelessWidget {
               child: Row(
                 children: [
                   Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Center(child: Image.asset(featureproductimage[index],width: 130,height: 150,fit: BoxFit.fill,)),
-                      10.heightBox,
+                      Gap(20),
                       featureproductname[index].text.bold.size(22).make(),
                       Gap(10),
                       "Description".text.size(18).color(Colors.blueGrey).make(),
@@ -36,14 +36,14 @@ class NewArival extends StatelessWidget {
                     ],
                   ).onTap(() { }),
                   Gap(30),
-                  InkWell(child: Image.asset(cartbag,height: 35,),onTap: () {
+                  InkWell(child: Image.asset(cartbag,height: 35,alignment: Alignment.centerLeft),onTap: () {
 
                   },),
 
                 ],
               ),
             ),
-          ).box.padding(EdgeInsets.only(left: 10)).make()),
+          ).box.padding(EdgeInsets.only(left: 10,top: 10)).make()),
         ),
 
     );
