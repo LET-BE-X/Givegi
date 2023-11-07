@@ -1,3 +1,4 @@
+import 'package:ecommercegiveji/view/authScreen/screens/otp_page.dart';
 import 'package:ecommercegiveji/view/authScreen/widgets/custom_button.dart';
 import 'package:ecommercegiveji/view/authScreen/widgets/custom_stack.dart';
 import 'package:ecommercegiveji/view/authScreen/widgets/custon_textfield.dart';
@@ -33,7 +34,9 @@ class _NewAccScreenState extends State<NewAccScreen> {
           ),
           40.heightBox,
           MyButton(
-            ontap: () {},
+            ontap: () {
+              Get.to(() => OtpPage());
+            },
             height: 55,
             width: 343,
             text: 'Continue',
