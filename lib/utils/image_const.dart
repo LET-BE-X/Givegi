@@ -1,7 +1,8 @@
 // icon
 
 import 'package:flutter/material.dart';
-const cartbag="assets/icons/cartbag.png";
+
+const cartbag = "assets/icons/cartbag.png";
 const logo = "assets/icons/logo.png";
 const splashBg = "assets/icons/Splash_screen_Bg.png";
 const authbg = "assets/icons/Auth_bg.png";
@@ -62,7 +63,7 @@ const icTwitterLogo = "assets/icons/twitter_logo.png";
 const icWallet = "assets/icons/wallet.png";
 const icWhiteTick = "assets/icons/white_tick.png";
 const icWholeSale = "assets/icons/wholesale.png";
-const logout="assets/icons/logout.png";
+const logout = "assets/icons/logout.png";
 // main iconss
 const svgBell = "assets/svgIcons/bell.svg";
 const svgGrid = "assets/svgIcons/grid.svg";
@@ -72,6 +73,8 @@ const svgUser = "assets/svgIcons/user.svg";
 const svgGoogle = "assets/svgIcons/google.svg";
 const svgFacebook = "assets/svgIcons/facebook.svg";
 const svgMail = "assets/svgIcons/mail.svg";
+
+const otpImage = "assets/images/otp.png";
 
 //images
 const imgBackground = "assets/icons/bg.png";
@@ -150,12 +153,12 @@ const imgStripe = "assets/images/stripe.png";
 const imgTwocheckout = "assets/images/twocheckout.png";
 const imgVogue = "assets/images/vogue.png";
 const imgWallet = "assets/images/wallet.png";
-const printedshirt="assets/images/printed.png";
-const swetshirt="assets/images/swetshirt.png";
-const bag="assets/images/bags.png";
-const oversized="assets/images/oversizedtshirts.png";
-const kids="assets/images/kids.png";
-const slaves="assets/images/slaves.png";
+const printedshirt = "assets/images/printed.png";
+const swetshirt = "assets/images/swetshirt.png";
+const bag = "assets/images/bags.png";
+const oversized = "assets/images/oversizedtshirts.png";
+const kids = "assets/images/kids.png";
+const slaves = "assets/images/slaves.png";
 
 const Color kTextBoxColor = Color(0xffE8EDF0);
 
