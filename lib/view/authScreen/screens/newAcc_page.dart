@@ -1,3 +1,5 @@
+// ignore_for_file: camel_case_types
+
 import 'package:ecommercegiveji/view/authScreen/screens/otp_page.dart';
 import 'package:ecommercegiveji/view/authScreen/widgets/custom_button.dart';
 import 'package:ecommercegiveji/view/authScreen/widgets/custom_stack.dart';
@@ -6,14 +8,14 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:velocity_x/velocity_x.dart';
 
-class NewAccScreen extends StatefulWidget {
-  const NewAccScreen({super.key});
+class New_accScreen extends StatefulWidget {
+  const New_accScreen({super.key});
 
   @override
-  State<NewAccScreen> createState() => _NewAccScreenState();
+  State<New_accScreen> createState() => _New_accScreenState();
 }
 
-class _NewAccScreenState extends State<NewAccScreen> {
+class _New_accScreenState extends State<New_accScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

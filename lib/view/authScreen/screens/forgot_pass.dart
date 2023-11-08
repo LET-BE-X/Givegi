@@ -23,7 +23,7 @@ class _ForgetPassState extends State<ForgetPass> {
           child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          customText(
+          CustomText(
               align: TextAlign.center,
               color: kGreenColor,
               myText:

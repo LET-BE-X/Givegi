@@ -17,22 +17,28 @@ class EditProfile extends StatefulWidget {
 }
 
 class _EditProfileState extends State<EditProfile> {
-  DateTime _selecteddate=DateTime.now();
+  DateTime _selecteddate = DateTime.now();
   @override
   Widget build(BuildContext context) {
     Get.put(ProfileController());
     var controller = Get.find<ProfileController>();
-    return Obx(()=>Scaffold(
+    return Obx(
+      () => Scaffold(
         appBar: AppBar(
           toolbarHeight: 70,
           backgroundColor: Colors.white,
           title: Row(
             children: [
               Gap(66),
-              Text("Edit Profile",style: TextStyle(fontSize: 28,color: Colors.black,fontWeight: FontWeight.w600),),
+              Text(
+                "Edit Profile",
+                style: TextStyle(
+                    fontSize: 28,
+                    color: Colors.black,
+                    fontWeight: FontWeight.w600),
+              ),
             ],
           ),
-
         ),
         body: SingleChildScrollView(
           scrollDirection: Axis.vertical,
@@ -46,19 +52,18 @@ class _EditProfileState extends State<EditProfile> {
                     height: 130,
                     decoration: BoxDecoration(
                       border: Border.all(width: 4, color: Colors.white),
-
                       shape: BoxShape.circle,
                     ),
                     child: ClipOval(
                       child: controller.profileimgpath.isEmpty
                           ? Image.asset(
-                        profilepic,
-                        fit: BoxFit.fill,
-                      ) // Provide a default asset path
+                              profilepic,
+                              fit: BoxFit.fill,
+                            ) // Provide a default asset path
                           : Image.file(
-                        File(controller.profileimgpath.value),
-                        fit: BoxFit.fill,
-                      ),
+                              File(controller.profileimgpath.value),
+                              fit: BoxFit.fill,
+                            ),
                     ),
                   ),
                   Positioned(
@@ -79,26 +84,33 @@ class _EditProfileState extends State<EditProfile> {
                             onPressed: () {
                               controller.changeProfile(context);
                             },
-                            icon: Icon(Icons.edit,color: Colors.white,size: 20),
+                            icon:
+                                Icon(Icons.edit, color: Colors.white, size: 20),
                             color: Colors.white,
                           ),
                         ),
                       ))
-                ]),),
+                ]),
+              ),
               Gap(10),
-              Customtextbox(hint: "First Name",ispass: false),
+              customtextbox(hint: "First Name", ispass: false),
               Gap(10),
-              Customtextbox(hint: "Last Name",ispass: false),
+              customtextbox(hint: "Last Name", ispass: false),
               Gap(10),
-              Customtextbox(hint: "Email Id",ispass: false),
+              customtextbox(hint: "Email Id", ispass: false),
               Gap(10),
               Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Customtextbox(hint: "password",ispass: true),
+                  customtextbox(hint: "password", ispass: true),
                   Gap(10),
-                  "Change Password".text.start.size(16).color(Colors.green).make()
+                  "Change Password"
+                      .text
+                      .start
+                      .size(16)
+                      .color(Colors.green)
+                      .make()
                 ],
               ),
               Gap(10),
@@ -106,49 +118,61 @@ class _EditProfileState extends State<EditProfile> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Customtextbox(hint: "Phone Number",ispass: false,type: TextInputType.number),
+                  customtextbox(
+                      hint: "Phone Number",
+                      ispass: false,
+                      type: TextInputType.number),
                   Gap(10),
-                  "Change Phone Number".text.start.size(16).color(Colors.green).make()
+                  "Change Phone Number"
+                      .text
+                      .start
+                      .size(16)
+                      .color(Colors.green)
+                      .make()
                 ],
               ),
               Gap(10),
-              Customtextbox( hint: DateFormat.yMd().format(_selecteddate),ispass:false,widget: IconButton(
-                icon: Icon(Icons.calendar_month_outlined),
-                onPressed: (){
-                  _getDateFromUser();
-
-                },
-              ),),
+              customtextbox(
+                hint: DateFormat.yMd().format(_selecteddate),
+                ispass: false,
+                widget: IconButton(
+                  icon: Icon(Icons.calendar_month_outlined),
+                  onPressed: () {
+                    _getDateFromUser();
+                  },
+                ),
+              ),
               Gap(10),
             ],
           ),
-
         ),
-      bottomSheet: Container(
-          width: double.infinity,
-          height: 70,
-          child: ElevatedButton(onPressed: (){}, child: Text("Save Change",style: TextStyle(fontSize: 28,fontWeight: FontWeight.bold),),)),
-
+        bottomSheet: Container(
+            width: double.infinity,
+            height: 70,
+            child: ElevatedButton(
+              onPressed: () {},
+              child: Text(
+                "Save Change",
+                style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+              ),
+            )),
       ),
     );
-
   }
 
-  _getDateFromUser()async{
-    DateTime? _pickertime=await showDatePicker (
+  _getDateFromUser() async {
+    DateTime? _pickertime = await showDatePicker(
         context: context,
         initialDate: DateTime.now(),
         firstDate: DateTime(2020),
         lastDate: DateTime(2030));
-    if(_pickertime!=null){
+    if (_pickertime != null) {
       setState(() {
-        _selecteddate=_pickertime;
+        _selecteddate = _pickertime;
         print(_selecteddate);
       });
-    }else{
+    } else {
       print("wrong");
     }
   }
 }
-
-

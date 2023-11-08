@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:ecommercegiveji/utils/color_constant.dart';
 import 'package:ecommercegiveji/view/app.dart';
 import 'package:ecommercegiveji/view/authScreen/screens/forgot_pass.dart';
@@ -17,7 +19,7 @@ class LoginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: customText(color: kWhiteColor, myText: 'Login', size: 20),
+        title: CustomText(color: kWhiteColor, myText: 'Login', size: 20),
       ),
       body: myStack(
           child: Column(
@@ -37,7 +39,7 @@ class LoginScreen extends StatelessWidget {
             onTap: () {
               Get.to(() => ForgetPass());
             },
-            child: customText(
+            child: CustomText(
               color: kGreenColor,
               myText: 'Forgot Password?',
               size: 19,
@@ -58,7 +60,7 @@ class LoginScreen extends StatelessWidget {
             onTap: () {
               Get.to(() => SignupScreen());
             },
-            child: customText(
+            child: CustomText(
               color: kGreenColor,
               myText: ' Don\'t have an account?Signup',
               size: 18,

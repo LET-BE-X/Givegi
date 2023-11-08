@@ -38,7 +38,7 @@ class Google_facebook extends StatelessWidget {
               width: 40.w,
             ),
             5.widthBox,
-            customText(
+            CustomText(
               color: Colors.black,
               myText: text,
               size: 18.h,

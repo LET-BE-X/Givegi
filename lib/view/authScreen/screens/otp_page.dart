@@ -17,6 +17,7 @@ class OtpPage extends StatefulWidget {
 
 class _OtpPageState extends State<OtpPage> {
   String _code = "";
+
   bool _onEditing = false;
 
   @override
@@ -31,7 +32,7 @@ class _OtpPageState extends State<OtpPage> {
               width: 174,
             ),
             10.heightBox,
-            customText(
+            CustomText(
                 align: TextAlign.center,
                 color: kGreenColor,
                 myText: 'Please enter OTP sent to your mobile number',
@@ -55,7 +56,7 @@ class _OtpPageState extends State<OtpPage> {
               keyboardType: TextInputType.number,
               underlineColor: kGreenColor,
               length: 4,
-              margin: EdgeInsets.all(5),
+              margin: const EdgeInsets.all(5),
               cursorColor: Colors.blue,
               onCompleted: (String value) {
                 setState(() {
@@ -77,7 +78,7 @@ class _OtpPageState extends State<OtpPage> {
               text: 'Confirm',
             ),
             40.heightBox,
-            customText(
+            CustomText(
               color: Colors.black,
               myText: 'Didn\'t receive an OTP?',
               size: 18,
