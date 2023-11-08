@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:ecommercegiveji/utils/color_constant.dart';
 import 'package:ecommercegiveji/view/app.dart';
 import 'package:ecommercegiveji/view/authScreen/screens/forgot_pass.dart';

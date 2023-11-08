@@ -17,6 +17,7 @@ class OtpPage extends StatefulWidget {
 
 class _OtpPageState extends State<OtpPage> {
   String _code = "";
+
   bool _onEditing = false;
 
   @override
@@ -55,7 +56,7 @@ class _OtpPageState extends State<OtpPage> {
               keyboardType: TextInputType.number,
               underlineColor: kGreenColor,
               length: 4,
-              margin: EdgeInsets.all(5),
+              margin: const EdgeInsets.all(5),
               cursorColor: Colors.blue,
               onCompleted: (String value) {
                 setState(() {

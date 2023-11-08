@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:ecommercegiveji/utils/image_const.dart';
 import 'package:ecommercegiveji/view/More/screens/More_screens.dart';
 import 'package:flutter/material.dart';
