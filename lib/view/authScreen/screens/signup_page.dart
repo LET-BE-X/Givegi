@@ -46,7 +46,7 @@ class _SignupScreenState extends State<SignupScreen> {
             30.h.heightBox,
             MyButton(
               ontap: () {
-                Get.to(() => NewAccScreen());
+                Get.to(() => New_accScreen());
               },
               height: 55,
               width: double.infinity,

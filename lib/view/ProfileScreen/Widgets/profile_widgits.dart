@@ -24,31 +24,31 @@ class Profilephoto extends StatelessWidget {
             child: Column(
               children: [
                 SizedBox(
-                  height: 30,
+                  height: 30.h,
                 ),
                  Row(
                   children: [
-                    Gap(150),
+                    Gap(160.h),
                       Text(
                       "$Pagename",
-                       style: TextStyle(fontSize: 26,fontWeight: FontWeight.bold),
+                       style: TextStyle(fontSize: 26.h,fontWeight: FontWeight.bold),
                      ),
-                    Gap(105),
+                    Gap(135.h),
                     InkWell(child: CircleAvatar(
-                      radius: 15,
+                      radius: 15.h,
                       backgroundColor: Colors.purple,
-                      child: Icon(Icons.exit_to_app,size: 20,),),onTap: (){},)
+                      child: Icon(Icons.exit_to_app,size: 20.h,),),onTap: (){},)
                   ],
                 ),
                 SizedBox(
-                  height: 20,
+                  height: 20.h,
                 ),
                 Stack(children: [
                   Container(
-                    width: 130,
-                    height: 130,
+                    width: 130.h,
+                    height: 130.h,
                     decoration: BoxDecoration(
-                      border: Border.all(width: 4, color: Colors.white),
+                      border: Border.all(width: 4.h, color: Colors.white),
 
                       shape: BoxShape.circle,
                     ),
@@ -68,12 +68,12 @@ class Profilephoto extends StatelessWidget {
                       bottom: 0,
                       right: 0,
                       child: Container(
-                        height: 40,
-                        width: 50,
+                        height: 40.h,
+                        width: 50.h,
                         decoration: BoxDecoration(
                             shape: BoxShape.circle,
                             border: Border.all(
-                              width: 2,
+                              width: 2.h,
                               color: Colors.white,
                             ),
                             color: Colors.green),
@@ -82,7 +82,7 @@ class Profilephoto extends StatelessWidget {
                             onPressed: () {
                               controller.changeProfile(context);
                             },
-                            icon: Icon(Icons.edit,color: Colors.white,size: 20),
+                            icon: Icon(Icons.edit,color: Colors.white,size: 20.h),
                             color: Colors.white,
                           ),
                         ),
@@ -93,19 +93,18 @@ class Profilephoto extends StatelessWidget {
                 ),
                 Text(
                   "Username",
-                  style: TextStyle(fontSize: 18,fontWeight: FontWeight.w700),
+                  style: TextStyle(fontSize: 18.h,fontWeight: FontWeight.w700),
                 ),
                 SizedBox(
-                  height: 10,
+                  height: 10.h,
                 ),
                 Text(
-                  "9811000000",style: TextStyle(fontSize: 14),
+                  "9811000000",style: TextStyle(fontSize: 14.h),
 
                 )
               ],
             ).box
-                .padding(const EdgeInsets.all(16))
-                .margin(EdgeInsets.only())
+                .padding( EdgeInsets.all(16.h))
                 .make(),
           ),
     ),

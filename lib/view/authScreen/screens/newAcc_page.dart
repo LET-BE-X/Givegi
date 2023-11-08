@@ -1,3 +1,5 @@
+// ignore_for_file: camel_case_types
+
 import 'package:ecommercegiveji/view/authScreen/screens/otp_page.dart';
 import 'package:ecommercegiveji/view/authScreen/widgets/custom_button.dart';
 import 'package:ecommercegiveji/view/authScreen/widgets/custom_stack.dart';
@@ -6,14 +8,14 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:velocity_x/velocity_x.dart';
 
-class NewAccScreen extends StatefulWidget {
-  const NewAccScreen({super.key});
+class New_accScreen extends StatefulWidget {
+  const New_accScreen({super.key});
 
   @override
-  State<NewAccScreen> createState() => _NewAccScreenState();
+  State<New_accScreen> createState() => _New_accScreenState();
 }
 
-class _NewAccScreenState extends State<NewAccScreen> {
+class _New_accScreenState extends State<New_accScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,11 +23,11 @@ class _NewAccScreenState extends State<NewAccScreen> {
           child: Column(
         children: [
           CustomTextfield(
-            decoration: InputDecoration(hintText: 'Email/Username'),
+            decoration: const InputDecoration(hintText: 'Email/Username'),
           ),
           15.heightBox,
           CustomTextfield(
-            decoration: InputDecoration(),
+            decoration:const InputDecoration(),
           ),
           15.heightBox,
           CustomTextfield(
@@ -35,7 +37,7 @@ class _NewAccScreenState extends State<NewAccScreen> {
           40.heightBox,
           MyButton(
             ontap: () {
-              Get.to(() => OtpPage());
+              Get.to(() => const OtpPage());
             },
             height: 55,
             width: 343,

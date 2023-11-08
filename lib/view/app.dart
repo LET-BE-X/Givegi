@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:ecommercegiveji/utils/image_const.dart';
 import 'package:ecommercegiveji/view/More/screens/More_screens.dart';
 import 'package:flutter/material.dart';
@@ -37,8 +39,9 @@ class Home extends StatelessWidget {
           elevation: 10,
           child: CurvedNavigationBar(
 
+
             animationDuration: Duration(milliseconds: 100),
-            height: 60,
+            height: 50,
             index: controller.currentNavIndex.value,
             buttonBackgroundColor: Colors.green,
             backgroundColor: Colors.transparent,
@@ -66,6 +69,7 @@ class Home extends StatelessWidget {
       color: controller.currentNavIndex.value == index
           ? Colors.white
           : Colors.grey,
+
     );
   }
 }
