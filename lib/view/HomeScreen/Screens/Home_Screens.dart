@@ -4,6 +4,7 @@ import 'package:ecommercegiveji/view/HomeScreen/Widgets/HomeTopBar.dart';
 import 'package:ecommercegiveji/view/HomeScreen/Widgets/New_Arival.dart';
 import 'package:ecommercegiveji/view/HomeScreen/Widgets/Swiper.dart';
 import 'package:ecommercegiveji/view/HomeScreen/Widgets/popular_categories.dart';
+import 'package:ecommercegiveji/view/HomeScreen/Widgets/products_list.dart';
 import 'package:ecommercegiveji/view/HomeScreen/Widgets/topcategory.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
@@ -55,7 +56,10 @@ class HomePage extends StatelessWidget {
               child: Text("Popular Categories",style: TextStyle(fontSize: 33,fontWeight: FontWeight.w500),),
             ),
             Gap(20),
-            PopularCategories()
+            PopularCategories(),
+            Gap(20),
+            ProductList()
+
 
           ],
         )),

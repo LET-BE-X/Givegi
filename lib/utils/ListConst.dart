@@ -50,3 +50,39 @@ const orders=["Your order #10011 has been dispatched",
   "Your order #FI9072 has been dispatched",
   "Your order #FI9057 delivery is nearby"
 ];
+const productname = [
+  "Lenovo Laptop ",
+  "Lipstick",
+  "MacBook",
+  "Sandle",
+  "Ladies Bag",
+  "Football Boot",
+  "Sunglasses"
+];
+const productimage = [
+  imgP1,
+  imgP2,
+  imgP3,
+  imgP4,
+  imgP5,
+  imgP6,
+  imgP7,
+];
+const productrating = [
+  '4.8',
+  '4.0',
+  '5.0',
+  '3.6',
+  '4.0',
+  '4.7',
+  '4.9',
+];
+const productprice = [
+  "NPR: 1,28,530",
+  "NPR: 128",
+  "NPR: 1,78,530",
+  "NPR: 1,283",
+  "NPR: 1,500",
+  "NPR: 12,853",
+  "NPR: 1,285"
+];

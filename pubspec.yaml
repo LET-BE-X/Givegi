@@ -48,10 +48,7 @@ dependencies:
   date_picker_timeline:
   intl:
   flutter_verification_code:
-#  google_maps_flutter:
-#  dio:
-#  flutter_polyline_points:
-
+  flutter_osm_plugin:
 
 dev_dependencies:
   flutter_test:
