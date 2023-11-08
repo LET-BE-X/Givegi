@@ -92,14 +92,14 @@ class Profilephoto extends StatelessWidget {
                   height: 2.h,
                 ),
                 Text(
-                  "Username",
+                  "Demo user",
                   style: TextStyle(fontSize: 18.h,fontWeight: FontWeight.w700),
                 ),
                 SizedBox(
                   height: 10.h,
                 ),
                 Text(
-                  "9811000000",style: TextStyle(fontSize: 14.h),
+                  "demo123@gmail.com",style: TextStyle(fontSize: 12.h),
 
                 )
               ],

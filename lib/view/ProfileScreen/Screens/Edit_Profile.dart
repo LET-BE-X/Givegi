@@ -31,10 +31,10 @@ class _EditProfileState extends State<EditProfile> {
           title: Row(
             children: [
               Gap(65.h),
-              const Text(
+               Text(
                 "Edit Profile",
                 style: TextStyle(
-                    fontSize: 28,
+                    fontSize: 28.h,
                     color: Colors.black,
                     fontWeight: FontWeight.w600),
               ),
