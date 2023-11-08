@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:velocity_x/velocity_x.dart';
 
@@ -17,7 +18,7 @@ class PopularCategories extends StatelessWidget {
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 3,
           crossAxisSpacing: 2,
-        mainAxisExtent: 230
+        mainAxisExtent: 230.h
           ),
       itemBuilder: (context, index) {
         return Column(
@@ -27,29 +28,29 @@ class PopularCategories extends StatelessWidget {
           children: [
             ClipRRect(
               borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(12),
-                  topRight: Radius.circular(12)),
+                  topLeft: Radius.circular(12.h),
+                  topRight: Radius.circular(12.h)),
               child: Container(
-                height: 150,
-                width: 150,
-                color: Color(0xffE9E9E9),
+                height: 150.h,
+                width: 150.h,
+                color:const Color(0xffE9E9E9),
                 child: Image.asset(
                   Categoriesproductimage[index],
-                  width: 135,
+                  width: 135.h,
                   // height: 160,
                   fit: BoxFit.cover,
                 ),
               ),
             ),
-            10.heightBox,
+            10.h.heightBox,
             categoriesproductname[index]
                 .text.center
                 .fontFamily(Vx.blackHex)
                 .fontWeight(FontWeight.w800)
-                .size(8)
+                .size(8.h)
                 .make()
                 .marginOnly(left: 5),
-            10.heightBox,
+            10.h.heightBox,
 
 
           ],

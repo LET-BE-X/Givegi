@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';
 
 class Payment extends StatelessWidget {
@@ -12,14 +13,14 @@ class Payment extends StatelessWidget {
         backgroundColor: Colors.white,
         title: Row(
           children: [
-            Gap(60),
-            Text("My Payments",style: TextStyle(fontSize: 28,color: Colors.black,fontWeight: FontWeight.w600),),
+            Gap(60.h),
+            Text("My Payments",style: TextStyle(fontSize: 28.h,color: Colors.black,fontWeight: FontWeight.w600),),
           ],
         ),
 
       ),
-      backgroundColor: Color(0xffE6F8DE),
-      body: Text("Payments"),
+      backgroundColor: const Color(0xffE6F8DE),
+      body:const  Text("Payments"),
     );
   }
 }

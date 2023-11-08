@@ -37,8 +37,8 @@ class _NewAddressState extends State<NewAddress> {
   Widget build(BuildContext context) {
 
     return Scaffold(
-      body:OSMFlutter(controller: _mapController, mapIsLoading: Center(child: const CircularProgressIndicator()),osmOption: OSMOption(
-        zoomOption: ZoomOption(
+      body:OSMFlutter(controller: _mapController, mapIsLoading: const Center(child: const CircularProgressIndicator()),osmOption: OSMOption(
+        zoomOption: const ZoomOption(
           initZoom: 13,
           minZoomLevel: 2,
           maxZoomLevel: 19,
@@ -52,18 +52,18 @@ class _NewAddressState extends State<NewAddress> {
               size: 20,
             ),
           ),
-          directionArrowMarker: MarkerIcon(
+          directionArrowMarker:const MarkerIcon(
             icon: Icon(
               Icons.double_arrow,
               size: 48,
             ),
           ),
         ),
-        roadConfiguration: RoadOption(
+        roadConfiguration:const RoadOption(
           roadColor: Colors.yellowAccent,
         ),
         markerOption: MarkerOption(
-            defaultMarker: MarkerIcon(
+            defaultMarker:const MarkerIcon(
               icon: Icon(
                 Icons.person_pin_circle,
                 color: Colors.blue,
@@ -72,12 +72,12 @@ class _NewAddressState extends State<NewAddress> {
             )
         ),
       )),
-      bottomSheet:  Container(
+      bottomSheet:  SizedBox(
           width: double.infinity,
           height: 70,
           child: ElevatedButton(onPressed: (){
             Get.to(()=>Address());
-          }, child: Text("Save Address",style: TextStyle(fontSize: 28,fontWeight: FontWeight.bold),),)),
+          }, child:const Text("Save Address",style: TextStyle(fontSize: 28,fontWeight: FontWeight.bold),),)),
     );
   }
 }

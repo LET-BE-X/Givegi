@@ -37,8 +37,9 @@ class Home extends StatelessWidget {
           elevation: 10,
           child: CurvedNavigationBar(
 
+
             animationDuration: Duration(milliseconds: 100),
-            height: 60,
+            height: 50,
             index: controller.currentNavIndex.value,
             buttonBackgroundColor: Colors.green,
             backgroundColor: Colors.transparent,
@@ -66,6 +67,7 @@ class Home extends StatelessWidget {
       color: controller.currentNavIndex.value == index
           ? Colors.white
           : Colors.grey,
+
     );
   }
 }

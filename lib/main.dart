@@ -16,14 +16,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      designSize: Size(428, 926),
+      designSize: const Size(428, 926),
       minTextAdapt: true,
       builder: (context, child) {
         return GetMaterialApp(
           title: 'Flutter Demo',
           debugShowCheckedModeBanner: false,
           theme: ThemeData(primarySwatch: Colors.green),
-          home: SplashScreen(),
+          home: const SplashScreen(),
         );
       },
     );

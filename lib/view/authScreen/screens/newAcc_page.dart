@@ -21,11 +21,11 @@ class _NewAccScreenState extends State<NewAccScreen> {
           child: Column(
         children: [
           CustomTextfield(
-            decoration: InputDecoration(hintText: 'Email/Username'),
+            decoration: const InputDecoration(hintText: 'Email/Username'),
           ),
           15.heightBox,
           CustomTextfield(
-            decoration: InputDecoration(),
+            decoration:const InputDecoration(),
           ),
           15.heightBox,
           CustomTextfield(
@@ -35,7 +35,7 @@ class _NewAccScreenState extends State<NewAccScreen> {
           40.heightBox,
           MyButton(
             ontap: () {
-              Get.to(() => OtpPage());
+              Get.to(() => const OtpPage());
             },
             height: 55,
             width: 343,

@@ -18,10 +18,10 @@ Widget Customtextbox({ String? hint,controller,ispass ,type,Widget? widget}){
             controller: controller,
             decoration:  InputDecoration(
 
-              contentPadding: EdgeInsets.only(left: 20,right: 20),
-              constraints: BoxConstraints.expand(width: 350,height: 50),
+              contentPadding:const EdgeInsets.only(left: 20,right: 20),
+              constraints:const BoxConstraints.expand(width: 350,height: 50),
 
-              labelStyle: TextStyle(
+              labelStyle:const TextStyle(
                   fontWeight: FontWeight.w600,
                   color: Colors.black
               ),

@@ -30,12 +30,12 @@ class LoginScreen extends StatelessWidget {
           ),
           20.heightBox,
           CustomTextfield(
-            decoration: InputDecoration(suffixIcon: Icon(Icons.visibility)),
+            decoration:const InputDecoration(suffixIcon: Icon(Icons.visibility)),
           ),
           15.heightBox,
           GestureDetector(
             onTap: () {
-              Get.to(() => ForgetPass());
+              Get.to(() => const ForgetPass());
             },
             child: customText(
               color: kGreenColor,
@@ -47,7 +47,7 @@ class LoginScreen extends StatelessWidget {
           30.heightBox,
           MyButton(
             ontap: () {
-              Get.to(() => Home());
+              Get.to(() =>const Home());
             },
             height: 50,
             width: 344,
@@ -56,7 +56,7 @@ class LoginScreen extends StatelessWidget {
           25.heightBox,
           GestureDetector(
             onTap: () {
-              Get.to(() => SignupScreen());
+              Get.to(() => const SignupScreen());
             },
             child: customText(
               color: kGreenColor,

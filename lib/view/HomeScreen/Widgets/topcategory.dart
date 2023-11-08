@@ -23,7 +23,7 @@ class TopCategory extends StatelessWidget {
                       .color(categorytextcolor)
                       .fontFamily(Vx.blackHex)
                       .make(),
-                ).box.size(70, 25).padding(EdgeInsets.only(top: 2)).color(categorybgcolor).rounded.make(),
+                ).box.size(70, 25).padding(const EdgeInsets.only(top: 2)).color(categorybgcolor).rounded.make(),
                 10.heightBox,
               ],
             )

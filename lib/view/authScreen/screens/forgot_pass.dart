@@ -31,12 +31,12 @@ class _ForgetPassState extends State<ForgetPass> {
               size: 18),
           40.heightBox,
           CustomTextfield(
-            decoration: InputDecoration(hintText: 'E-mail Id'),
+            decoration: const InputDecoration(hintText: 'E-mail Id'),
           ),
           30.heightBox,
           MyButton(
               ontap: () {
-                Get.to(() => Home());
+                Get.to(() => const Home());
               },
               height: 55,
               text: 'Submit',

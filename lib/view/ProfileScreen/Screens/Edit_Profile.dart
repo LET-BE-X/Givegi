@@ -1,5 +1,6 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
@@ -35,6 +36,7 @@ class _EditProfileState extends State<EditProfile> {
 
         ),
         body: SingleChildScrollView(
+          physics: const BouncingScrollPhysics(),
           scrollDirection: Axis.vertical,
           child: Column(
             children: [
@@ -79,55 +81,55 @@ class _EditProfileState extends State<EditProfile> {
                             onPressed: () {
                               controller.changeProfile(context);
                             },
-                            icon: Icon(Icons.edit,color: Colors.white,size: 20),
+                            icon: Icon(Icons.edit,color: Colors.white,size: 20.h),
                             color: Colors.white,
                           ),
                         ),
                       ))
                 ]),),
-              Gap(10),
+              Gap(10.h),
               Customtextbox(hint: "First Name",ispass: false),
-              Gap(10),
+              Gap(10.h),
               Customtextbox(hint: "Last Name",ispass: false),
-              Gap(10),
+              Gap(10.h),
               Customtextbox(hint: "Email Id",ispass: false),
-              Gap(10),
+              Gap(10.h),
               Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Customtextbox(hint: "password",ispass: true),
-                  Gap(10),
+                  Gap(10.h),
                   "Change Password".text.start.size(16).color(Colors.green).make()
                 ],
               ),
-              Gap(10),
+              Gap(10.h),
               Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Customtextbox(hint: "Phone Number",ispass: false,type: TextInputType.number),
-                  Gap(10),
+                  Gap(10.h),
                   "Change Phone Number".text.start.size(16).color(Colors.green).make()
                 ],
               ),
-              Gap(10),
+              Gap(10.h),
               Customtextbox( hint: DateFormat.yMd().format(_selecteddate),ispass:false,widget: IconButton(
-                icon: Icon(Icons.calendar_month_outlined),
+                icon:const Icon(Icons.calendar_month_outlined),
                 onPressed: (){
                   _getDateFromUser();
 
                 },
               ),),
-              Gap(10),
+              Gap(10.h),
             ],
           ),
 
         ),
-      bottomSheet: Container(
+      bottomSheet: SizedBox(
           width: double.infinity,
           height: 70,
-          child: ElevatedButton(onPressed: (){}, child: Text("Save Change",style: TextStyle(fontSize: 28,fontWeight: FontWeight.bold),),)),
+          child: ElevatedButton(onPressed: (){}, child: Text("Save Change",style: TextStyle(fontSize: 28.h,fontWeight: FontWeight.bold),),)),
 
       ),
     );
@@ -143,10 +145,10 @@ class _EditProfileState extends State<EditProfile> {
     if(_pickertime!=null){
       setState(() {
         _selecteddate=_pickertime;
-        print(_selecteddate);
+
       });
     }else{
-      print("wrong");
+
     }
   }
 }
