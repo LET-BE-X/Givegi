@@ -1,4 +1,3 @@
-
 import 'package:ecommercegiveji/utils/color_constant.dart';
 import 'package:ecommercegiveji/view/HomeScreen/Widgets/HomeTopBar.dart';
 import 'package:ecommercegiveji/view/HomeScreen/Widgets/New_Arival.dart';
@@ -8,7 +7,6 @@ import 'package:ecommercegiveji/view/HomeScreen/Widgets/products_list.dart';
 import 'package:ecommercegiveji/view/HomeScreen/Widgets/topcategory.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -25,9 +23,9 @@ class HomePage extends StatelessWidget {
         ),
       ),
       body: const SingleChildScrollView(
-        physics: BouncingScrollPhysics() ,
+        physics: BouncingScrollPhysics(),
         scrollDirection: Axis.vertical,
-        child:  SafeArea(
+        child: SafeArea(
             child: Column(
           children: [
             Gap(15),
@@ -37,15 +35,26 @@ class HomePage extends StatelessWidget {
             Gap(20),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-
               children: [
-                Text("New Arrivals",style: TextStyle(fontSize: 33,fontWeight: FontWeight.w500),),
-                InkWell(child:Row(
-                  children: [
-                    Text("Explore All",style: TextStyle(fontSize: 15,fontWeight: FontWeight.w500),),
-                    Icon(Icons.arrow_forward_ios_outlined,color:Colors.purple,)
-                  ],
-                ) ,)
+                Text(
+                  "New Arrivals",
+                  style: TextStyle(fontSize: 28, fontWeight: FontWeight.w500),
+                ),
+                InkWell(
+                  child: Row(
+                    children: [
+                      Text(
+                        "Explore All",
+                        style: TextStyle(
+                            fontSize: 15, fontWeight: FontWeight.w500),
+                      ),
+                      Icon(
+                        Icons.arrow_forward_ios_outlined,
+                        color: Colors.purple,
+                      )
+                    ],
+                  ),
+                )
               ],
             ),
             Gap(20),
@@ -53,14 +62,15 @@ class HomePage extends StatelessWidget {
             Gap(20),
             Padding(
               padding: EdgeInsets.only(right: 120),
-              child: Text("Popular Categories",style: TextStyle(fontSize: 33,fontWeight: FontWeight.w500),),
+              child: Text(
+                "Popular Categories",
+                style: TextStyle(fontSize: 33, fontWeight: FontWeight.w500),
+              ),
             ),
             Gap(20),
             PopularCategories(),
             Gap(20),
             ProductList()
-
-
           ],
         )),
       ),

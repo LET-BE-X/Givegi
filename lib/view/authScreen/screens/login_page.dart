@@ -19,7 +19,7 @@ class LoginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: CustomText(color: kWhiteColor, myText: 'Login', size: 20),
+        title: customText(color: kWhiteColor, myText: 'Login', size: 20),
       ),
       body: myStack(
           child: Column(
@@ -39,7 +39,7 @@ class LoginScreen extends StatelessWidget {
             onTap: () {
               Get.to(() => ForgetPass());
             },
-            child: CustomText(
+            child: customText(
               color: kGreenColor,
               myText: 'Forgot Password?',
               size: 19,
@@ -60,7 +60,7 @@ class LoginScreen extends StatelessWidget {
             onTap: () {
               Get.to(() => SignupScreen());
             },
-            child: CustomText(
+            child: customText(
               color: kGreenColor,
               myText: ' Don\'t have an account?Signup',
               size: 18,

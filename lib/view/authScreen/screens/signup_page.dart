@@ -24,14 +24,14 @@ class _SignupScreenState extends State<SignupScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: CustomText(color: kWhiteColor, myText: 'Signup', size: 22.w),
+        title: customText(color: kWhiteColor, myText: 'Signup', size: 22.w),
       ),
       body: myStack(
           child: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            CustomText(
+            customText(
                 color: kGreenColor,
                 myText: 'Lets start, create your Giveji Account',
                 fontWeight: FontWeight.bold,
@@ -54,7 +54,7 @@ class _SignupScreenState extends State<SignupScreen> {
             ),
             20.heightBox,
             Center(
-              child: CustomText(
+              child: customText(
                 color: Colors.grey,
                 myText: 'or continue with',
                 size: 20,
@@ -83,7 +83,7 @@ class _SignupScreenState extends State<SignupScreen> {
               ],
             ),
             20.heightBox,
-            CustomText(
+            customText(
               color: Colors.black,
               myText:
                   'By creating an account, you agree with\nGiveji’s Terms and Conditions and Privacy Policy',

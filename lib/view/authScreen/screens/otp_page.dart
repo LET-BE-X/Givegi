@@ -32,7 +32,7 @@ class _OtpPageState extends State<OtpPage> {
               width: 174,
             ),
             10.heightBox,
-            CustomText(
+            customText(
                 align: TextAlign.center,
                 color: kGreenColor,
                 myText: 'Please enter OTP sent to your mobile number',
@@ -78,7 +78,7 @@ class _OtpPageState extends State<OtpPage> {
               text: 'Confirm',
             ),
             40.heightBox,
-            CustomText(
+            customText(
               color: Colors.black,
               myText: 'Didn\'t receive an OTP?',
               size: 18,
