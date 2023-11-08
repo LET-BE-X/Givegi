@@ -28,12 +28,12 @@ class Profilephoto extends StatelessWidget {
                 ),
                  Row(
                   children: [
-                    Gap(140.h),
+                    Gap(160.h),
                       Text(
                       "$Pagename",
                        style: TextStyle(fontSize: 26.h,fontWeight: FontWeight.bold),
                      ),
-                    Gap(100.h),
+                    Gap(135.h),
                     InkWell(child: CircleAvatar(
                       radius: 15.h,
                       backgroundColor: Colors.purple,
