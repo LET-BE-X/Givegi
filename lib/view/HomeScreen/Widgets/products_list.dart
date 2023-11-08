@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_unnecessary_containers
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:velocity_x/velocity_x.dart';
@@ -14,7 +16,7 @@ class ProductList extends StatelessWidget {
         physics: const NeverScrollableScrollPhysics(),
         shrinkWrap: true,
         itemCount: featureproductimage.length,
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
             mainAxisSpacing: 8,
             crossAxisSpacing: 8,
@@ -22,14 +24,14 @@ class ProductList extends StatelessWidget {
         itemBuilder: (context, index) {
           return Card(
             elevation: 7.2,
-            margin: EdgeInsets.all(8),
+            margin: const EdgeInsets.all(8),
             shape: BeveledRectangleBorder(
                 borderRadius: BorderRadius.circular(6), side: BorderSide.none),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 ClipRRect(
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                       topLeft: Radius.circular(12),
                       topRight: Radius.circular(12)),
                   child: Image.asset(
@@ -49,14 +51,14 @@ class ProductList extends StatelessWidget {
                 10.heightBox,
                 Row(
                   children: [
-                    Icon(
+                    const Icon(
                       Icons.star,
                       color: Colors.yellow,
                       size: 20,
                     ),
                     Text(
-                      featureproductrating[index] + " /(5)",
-                      style: TextStyle(
+                      "${featureproductrating[index]} /(5)",
+                      style: const TextStyle(
                         fontFamily: Vx.blackHex,
                         fontSize: 15,
                         fontWeight: FontWeight.w800,

@@ -1,5 +1,4 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
-
 import 'package:ecommercegiveji/utils/color_constant.dart';
 import 'package:ecommercegiveji/view/HomeScreen/Widgets/HomeTopBar.dart';
 import 'package:ecommercegiveji/view/HomeScreen/Widgets/New_Arival.dart';
