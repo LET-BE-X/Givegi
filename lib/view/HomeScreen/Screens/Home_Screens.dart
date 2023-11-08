@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+
 import 'package:ecommercegiveji/utils/color_constant.dart';
 import 'package:ecommercegiveji/view/HomeScreen/Widgets/HomeTopBar.dart';
 import 'package:ecommercegiveji/view/HomeScreen/Widgets/New_Arival.dart';
@@ -5,8 +7,10 @@ import 'package:ecommercegiveji/view/HomeScreen/Widgets/Swiper.dart';
 import 'package:ecommercegiveji/view/HomeScreen/Widgets/popular_categories.dart';
 import 'package:ecommercegiveji/view/HomeScreen/Widgets/products_list.dart';
 import 'package:ecommercegiveji/view/HomeScreen/Widgets/topcategory.dart';
+import 'package:ecommercegiveji/view/authScreen/widgets/customText.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:get/get.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -22,11 +26,12 @@ class HomePage extends StatelessWidget {
           child: HomeTopBar(),
         ),
       ),
-      body: const SingleChildScrollView(
+      body: SingleChildScrollView(
         physics: BouncingScrollPhysics(),
         scrollDirection: Axis.vertical,
         child: SafeArea(
             child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Gap(15),
             TopCategory(),
@@ -36,10 +41,10 @@ class HomePage extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text(
-                  "New Arrivals",
-                  style: TextStyle(fontSize: 28, fontWeight: FontWeight.w500),
-                ),
+                customText(
+                    myText: 'New Arrivals',
+                    size: 26,
+                    fontWeight: FontWeight.w500),
                 InkWell(
                   child: Row(
                     children: [
@@ -56,17 +61,15 @@ class HomePage extends StatelessWidget {
                   ),
                 )
               ],
-            ),
+            ).marginOnly(left: 15, right: 15),
             Gap(20),
             NewArival(),
             Gap(20),
-            Padding(
-              padding: EdgeInsets.only(right: 120),
-              child: Text(
-                "Popular Categories",
-                style: TextStyle(fontSize: 33, fontWeight: FontWeight.w500),
-              ),
-            ),
+            customText(
+                    myText: 'Popular Categories',
+                    size: 30,
+                    fontWeight: FontWeight.w500)
+                .marginOnly(left: 15),
             Gap(20),
             PopularCategories(),
             Gap(20),
