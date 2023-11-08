@@ -23,7 +23,8 @@ class ProductList extends StatelessWidget {
           return Card(
             elevation: 7.2,
             margin: EdgeInsets.all(8),
-            shape: BeveledRectangleBorder(borderRadius: BorderRadius.circular(6),side: BorderSide.none),
+            shape: BeveledRectangleBorder(
+                borderRadius: BorderRadius.circular(6), side: BorderSide.none),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -62,7 +63,7 @@ class ProductList extends StatelessWidget {
                       ),
                     ),
                   ],
-                ).marginOnly(left: 2, bottom: 5),
+                ).marginOnly(left: 2, bottom: 10),
                 featureproductprice[index]
                     .text
                     .fontFamily(Vx.blackHex)
@@ -71,12 +72,11 @@ class ProductList extends StatelessWidget {
                     .color(Colors.green)
                     .make()
                     .marginOnly(left: 5),
-
               ],
             )
                 .box
                 .rounded
-            // .color(const Color.fromARGB(96, 37, 37, 37))
+                // .color(const Color.fromARGB(96, 37, 37, 37))
                 .padding(const EdgeInsets.all(3))
                 .make()
                 .onTap(() {
