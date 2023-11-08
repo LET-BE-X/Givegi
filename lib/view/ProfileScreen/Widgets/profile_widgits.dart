@@ -33,11 +33,11 @@ class Profilephoto extends StatelessWidget {
                       "$Pagename",
                        style: TextStyle(fontSize: 26.h,fontWeight: FontWeight.bold),
                      ),
-                    Gap(135.h),
+                    Gap(115.h),
                     InkWell(child: CircleAvatar(
-                      radius: 15.h,
+                      radius: 25.h,
                       backgroundColor: Colors.purple,
-                      child: Icon(Icons.exit_to_app,size: 20.h,),),onTap: (){},)
+                      child: Icon(Icons.exit_to_app,size: 35.h,),),onTap: (){},)
                   ],
                 ),
                 SizedBox(
