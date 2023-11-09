@@ -57,7 +57,7 @@ class NewArival extends StatelessWidget {
                                 .color(Colors.black87)
                                 .make()
                           ],
-                        ).onTap(() {}).marginOnly(left: 10.w, bottom: 20.h),
+                        ).onTap(() {}).marginOnly(left: 18.w, bottom: 20.h),
                         Gap(10.h),
                       ],
                     ),
