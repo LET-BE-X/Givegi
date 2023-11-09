@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'dart:math';
 import 'package:ecommercegiveji/utils/color_constant.dart';
 import 'package:ecommercegiveji/utils/image_const.dart';

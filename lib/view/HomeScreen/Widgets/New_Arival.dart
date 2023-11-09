@@ -1,4 +1,5 @@
-import 'package:ecommercegiveji/utils/image_const.dart';
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';

@@ -1,3 +1,5 @@
+// ignore_for_file: constant_identifier_names, file_names
+
 import 'image_const.dart';
 
 const topcategory=["All","Mens","Womens","Kids","Assessories"];

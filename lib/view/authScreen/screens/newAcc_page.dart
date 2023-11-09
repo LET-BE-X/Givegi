@@ -1,4 +1,4 @@
-// ignore_for_file: camel_case_types
+// ignore_for_file: camel_case_types, file_names
 
 import 'package:ecommercegiveji/view/authScreen/screens/otp_page.dart';
 import 'package:ecommercegiveji/view/authScreen/widgets/custom_button.dart';
