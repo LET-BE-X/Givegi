@@ -27,7 +27,7 @@ class Address extends StatelessWidget {
           width: double.infinity,
           height: 70.h,
           child: ElevatedButton(onPressed: (){
-            Get.to(()=>const NewAddress());
+            Get.to(()=> NewAddress());
           }, child: Text("Add New Addresses",style: TextStyle(fontSize: 28.h,fontWeight: FontWeight.bold),),)),
     );
   }

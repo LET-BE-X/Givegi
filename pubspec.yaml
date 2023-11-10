@@ -49,6 +49,7 @@ dependencies:
   intl:
   flutter_verification_code:
   flutter_osm_plugin:
+  open_street_map_search_and_pick: ^0.1.0
 
 dev_dependencies:
   flutter_test:
