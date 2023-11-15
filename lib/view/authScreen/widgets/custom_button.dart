@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors_in_immutables, prefer_const_constructors
+
 import 'package:ecommercegiveji/utils/color_constant.dart';
 import 'package:flutter/material.dart';
 

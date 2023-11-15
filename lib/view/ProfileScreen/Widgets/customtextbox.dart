@@ -2,13 +2,14 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 Widget customtextbox({String? hint, controller, ispass, type, Widget? widget}) {
   return Column(
     crossAxisAlignment: CrossAxisAlignment.start,
     children: [
-      7.heightBox,
+      7.h.heightBox,
       Row(
         children: [
           TextFormField(
@@ -17,11 +18,11 @@ Widget customtextbox({String? hint, controller, ispass, type, Widget? widget}) {
             controller: controller,
 
             decoration: InputDecoration(
-              contentPadding: EdgeInsets.only(left: 20, right: 20),
-              constraints: BoxConstraints.expand(width: 350, height: 50),
-              labelStyle:
+              contentPadding: EdgeInsets.only(left: 20.h, right: 20.h),
+              constraints: BoxConstraints.expand(width: 350.h, height: 50.h),
+              hintStyle:
                   TextStyle(fontWeight: FontWeight.w600, color: Colors.black),
-              labelText: hint,
+              hintText: hint,
               fillColor: Colors.black,
               focusColor: Colors.black,
             ),
@@ -33,7 +34,7 @@ Widget customtextbox({String? hint, controller, ispass, type, Widget? widget}) {
                 )
         ],
       ),
-      10.heightBox
+      10.h.heightBox
     ],
   );
 }

@@ -6,9 +6,9 @@ import 'package:velocity_x/velocity_x.dart';
 import 'customText.dart';
 
 class Google_facebook extends StatelessWidget {
-  double? width;
-  String asset;
-  String text;
+  final double? width;
+  final String asset;
+  final String text;
   void Function()? ontap;
   Google_facebook({
     Key? key,

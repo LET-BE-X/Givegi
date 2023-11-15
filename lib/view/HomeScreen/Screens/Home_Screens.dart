@@ -26,80 +26,55 @@ class HomePage extends StatelessWidget {
           child: HomeTopBar(),
         ),
       ),
-      body:  SingleChildScrollView(
-        physics: const BouncingScrollPhysics() ,
-
-        scrollDirection: Axis.vertical,
-        child: SafeArea(
-            child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Gap(15.h),
-            const TopCategory(),
-            Gap(15.h),
-            const Swiper(),
-            Gap(20.h),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text("New Arrivals",style: TextStyle(fontSize: 33.h,fontWeight: FontWeight.w500),),
-                InkWell(child:Row(
-                  children: [
-                    Text("Explore All",style: TextStyle(fontSize: 15.h,fontWeight: FontWeight.w500),),
-                    Icon(Icons.arrow_forward_ios_outlined,color:Colors.purple,size: 20.h,)
-                  ],
-                ) ,)
-              ],
-            ),
-            Gap(20.h),
-            const NewArival(),
-            Gap(20.h),
-            Padding(
-              padding: EdgeInsets.only(right: 120.h),
-              child: Text("Popular Categories",style: TextStyle(fontSize: 33.h,fontWeight: FontWeight.w500),),
-            ),
-            Gap(20.h),
-            const PopularCategories(),
-            Gap(20.h),
-            const ProductList(),
-                Row(
-                  children: [
-                    customText(
-                        myText: 'New Arrivals',
-                        size: 26,
-                        fontWeight: FontWeight.w500),
-                    InkWell(
+      body: SingleChildScrollView(
+          physics: const BouncingScrollPhysics(),
+          scrollDirection: Axis.vertical,
+          child: SafeArea(
+              child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Gap(15.h),
+              const TopCategory(),
+              Gap(15.h),
+              const Swiper(),
+              Gap(20.h),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  customText(
+                      myText: 'New Arrivals',
+                      size: 26,
+                      fontWeight: FontWeight.w500),
+                  InkWell(
                       child: Row(
-                        children: [
-                          Text(
-                            "Explore All",
-                            style: TextStyle(
-                                fontSize: 15, fontWeight: FontWeight.w500),
-                          ),
-                          Icon(
-                            Icons.arrow_forward_ios_outlined,
-                            color: Colors.purple,
-                          )
-                        ],
+                    children: [
+                      Text(
+                        "Explore All",
+                        style: TextStyle(
+                            fontSize: 15, fontWeight: FontWeight.w500),
                       ),
-                    )
-                  ],
-                ),
-            Gap(20.h),
-            NewArival(),
-            Gap(20.h),
-            customText(
-                myText: 'Popular Categories',
-                size: 30,
-                fontWeight: FontWeight.w500)
-                .marginOnly(left: 15),
-            Gap(20.h),
-            PopularCategories(),
-            Gap(20.h),
-            ProductList()
-              ],
-            ).marginOnly(left: 15, right: 15),
-        )),
+                      Icon(
+                        Icons.arrow_forward_ios_outlined,
+                        color: Colors.purple,
+                      )
+                    ],
+                  )),
+                ],
+              ).marginOnly(left: 15, right: 15),
+              Gap(10.h),
+              NewArival(),
+              Gap(20.h),
+              customText(
+                      myText: 'Popular Categories',
+                      size: 30,
+                      fontWeight: FontWeight.w500)
+                  .marginOnly(left: 15),
+              Gap(10.h),
+              PopularCategories(),
+              Gap(10.h),
+              ProductList()
+            ],
+          ))),
     );
   }
 }

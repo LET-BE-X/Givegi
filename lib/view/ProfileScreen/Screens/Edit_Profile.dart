@@ -26,15 +26,15 @@ class _EditProfileState extends State<EditProfile> {
     return Obx(
       () => Scaffold(
         appBar: AppBar(
-          toolbarHeight: 70,
+          toolbarHeight: 70.h,
           backgroundColor: Colors.white,
           title: Row(
             children: [
-              Gap(66),
-              Text(
+              Gap(65.h),
+               Text(
                 "Edit Profile",
                 style: TextStyle(
-                    fontSize: 28,
+                    fontSize: 28.h,
                     color: Colors.black,
                     fontWeight: FontWeight.w600),
               ),
@@ -46,14 +46,14 @@ class _EditProfileState extends State<EditProfile> {
           scrollDirection: Axis.vertical,
           child: Column(
             children: [
-              Gap(20),
+              Gap(20.h),
               Center(
                 child: Stack(children: [
                   Container(
-                    width: 130,
-                    height: 130,
+                    width: 130.h,
+                    height: 130.h,
                     decoration: BoxDecoration(
-                      border: Border.all(width: 4, color: Colors.white),
+                      border: Border.all(width: 4.h, color: Colors.white),
                       shape: BoxShape.circle,
                     ),
                     child: ClipOval(
@@ -72,8 +72,8 @@ class _EditProfileState extends State<EditProfile> {
                       bottom: 0,
                       right: 0,
                       child: Container(
-                        height: 40,
-                        width: 50,
+                        height: 40.h,
+                        width: 50.h,
                         decoration: BoxDecoration(
                             shape: BoxShape.circle,
                             border: Border.all(
@@ -87,7 +87,7 @@ class _EditProfileState extends State<EditProfile> {
                               controller.changeProfile(context);
                             },
                             icon:
-                                Icon(Icons.edit, color: Colors.white, size: 20),
+                                Icon(Icons.edit, color: Colors.white, size: 20.h),
                             color: Colors.white,
                           ),
                         ),
@@ -95,19 +95,18 @@ class _EditProfileState extends State<EditProfile> {
 
                 ]),
               ),
-              Gap(10.h),
+              Gap(5.h),
               customtextbox(hint: "First Name", ispass: false),
-              Gap(10.h),
+              Gap(5.h),
               customtextbox(hint: "Last Name", ispass: false),
-              Gap(10.h),
+              Gap(5.h),
               customtextbox(hint: "Email Id", ispass: false),
-              Gap(10.h),
+              Gap(5.h),
               Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   customtextbox(hint: "password", ispass: true),
-                  Gap(10),
                   "Change Password"
                       .text
                       .start
@@ -116,7 +115,7 @@ class _EditProfileState extends State<EditProfile> {
                       .make()
                 ],
               ),
-              Gap(10.h),
+              Gap(5.h),
               Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -125,7 +124,6 @@ class _EditProfileState extends State<EditProfile> {
                       hint: "Phone Number",
                       ispass: false,
                       type: TextInputType.number),
-                  Gap(10.h),
                   "Change Phone Number"
                       .text
                       .start
@@ -134,12 +132,12 @@ class _EditProfileState extends State<EditProfile> {
                       .make()
                 ],
               ),
-              Gap(10.h),
+              Gap(5.h),
               customtextbox(
                 hint: DateFormat.yMd().format(_selecteddate),
                 ispass: false,
                 widget: IconButton(
-                  icon: Icon(Icons.calendar_month_outlined),
+                  icon: const Icon(Icons.calendar_month_outlined),
                   onPressed: () {
                     _getDateFromUser();
                   },
@@ -150,14 +148,14 @@ class _EditProfileState extends State<EditProfile> {
           ),
         ),
 
-        bottomSheet: SizedBox(
+        bottomNavigationBar: SizedBox(
             width: double.infinity,
             height: 70,
             child: ElevatedButton(
               onPressed: () {},
               child: Text(
                 "Save Change",
-                style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+                style:  TextStyle(fontSize: 28.h, fontWeight: FontWeight.bold),
               ),
             )),
       ),
