@@ -21,7 +21,7 @@ class ProductList extends StatelessWidget {
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
           mainAxisSpacing: 6.h,
-          crossAxisSpacing: 1.h,
+          crossAxisSpacing: 0.h,
           mainAxisExtent: 395.h),
       itemBuilder: (context, index) {
         return Column(
@@ -43,7 +43,7 @@ class ProductList extends StatelessWidget {
                 .text
                 .fontFamily(Vx.blackHex)
                 .fontWeight(FontWeight.w800)
-                .size(16.h)
+                .size(16.w)
                 .make()
                 .marginOnly(left: 5.h),
             10.h.heightBox,
@@ -63,11 +63,11 @@ class ProductList extends StatelessWidget {
                   ),
                 ),
               ],
-            ).marginOnly(left: 2.h, bottom: 5.h),
+            ).marginOnly(left: 2.w, bottom: 5.h),
             featureproductprice[index]
                 .text
                 .fontFamily(Vx.blackHex)
-                .size(15.h)
+                .size(13.w)
                 .fontWeight(FontWeight.w800)
                 .color(Colors.green)
                 .make()

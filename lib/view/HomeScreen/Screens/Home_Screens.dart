@@ -44,7 +44,7 @@ class HomePage extends StatelessWidget {
                 children: [
                   customText(
                       myText: 'New Arrivals',
-                      size: 26.h,
+                      size: 24.h,
                       fontWeight: FontWeight.w500),
                   InkWell(
                     onTap: (){},
@@ -53,24 +53,25 @@ class HomePage extends StatelessWidget {
                       Text(
                         "Explore All",
                         style: TextStyle(
-                            fontSize: 15.h, fontWeight: FontWeight.w500),
+                            fontSize: 13.h, fontWeight: FontWeight.w500),
                       ),
                       Icon(
                         Icons.arrow_forward_ios_outlined,
                         color: Colors.purple,
+                        size: 13.h,
                       )
                     ],
                   )),
                 ],
-              ).marginOnly(left: 15.h, right: 15.h),
+              ).marginOnly(left: 15.w, right: 15.h),
               Gap(10.h),
               NewArival(),
               Gap(20.h),
               customText(
                       myText: 'Popular Categories',
-                      size: 30.h,
+                      size: 25.h,
                       fontWeight: FontWeight.w500)
-                  .marginOnly(left: 15.h),
+                  .marginOnly(left: 10.h),
               Gap(10.h),
               PopularCategories(),
               Gap(10.h),
