@@ -73,7 +73,7 @@ class ProductList extends StatelessWidget {
                 .make()
                 .marginOnly(left: 5.h),
             10.h.heightBox,
-            offer==true?Container(child: Center(child: customText(myText: "Free Shipping",size: 14)),decoration: BoxDecoration(shape: BoxShape.rectangle,color: Colors.white,border: Border.all(width: 1.3,color: Colors.grey)),width: 95,):Container()
+            offer==true?Container(decoration: BoxDecoration(shape: BoxShape.rectangle,color: Colors.white,border: Border.all(width: 1.3,color: Colors.grey)),width: 100.h,height: 25.h,child: Center(child: customText(myText: "Free Shipping",size: 14.h)),):Container()
 
           ],
         )
