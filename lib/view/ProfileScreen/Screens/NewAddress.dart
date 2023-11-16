@@ -7,7 +7,7 @@ import 'package:open_street_map_search_and_pick/open_street_map_search_and_pick.
 
 
 class NewAddress extends StatefulWidget {
-  List? data;
+  Map? data;
    NewAddress({Key? key, this.data});
 
 
@@ -24,7 +24,6 @@ class _NewAddressState extends State<NewAddress> {
 
     return Scaffold(
       body:OpenStreetMapSearchAndPick(
-          // center: LatLong(26.8302, 86.2666),
         onGetCurrentLocationPressed: () async{
           Position position = await Geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.best);
           return LatLng(position.latitude, position.longitude);
@@ -38,10 +37,9 @@ class _NewAddressState extends State<NewAddress> {
           locationPinIconColor: Colors.green,
           buttonText: 'Save Address',
           onPicked: (pickedData) {
-            widget.data?.add(pickedData.addressName);
-            print(widget.data);
+            widget.data?.addAll(pickedData.address);
+            print(pickedData.addressName);
           },
-        // onGetCurrentLocationPressed: GetcurrentPosition(FutureOr<LatLong>),
 
 
           ),

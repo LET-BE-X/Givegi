@@ -1,3 +1,4 @@
+import 'package:ecommercegiveji/view/authScreen/widgets/customText.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:velocity_x/velocity_x.dart';
@@ -25,20 +26,6 @@ class _CartScreenState extends State<CartScreen> {
         scrollDirection: Axis.vertical,
         child: Column(
           children: [
-            Text(
-              "Subtotal:Nrs.502000",
-              style: TextStyle(fontSize: 20.h),
-            ).box.alignBottomLeft.make(),
-            20.h.heightBox,
-            ElevatedButton(
-              onPressed: () {},
-              style: const ButtonStyle(
-                  backgroundColor: MaterialStatePropertyAll(Colors.green)),
-              child: Text(
-                "Proceed to Buy($items)",
-                style: TextStyle(fontSize: 20.h),
-              ),
-            ).box.rounded.size(400.h, 50.h).make(),
             20.h.heightBox,
             Container(
               color: Colors.black12.withOpacity(0.08),
@@ -56,6 +43,23 @@ class _CartScreenState extends State<CartScreen> {
           ],
         ),
       ),
+     persistentFooterButtons: [
+
+       Column(children: [
+         customText(myText: "Subtotal:Nrs.502000",size: 20).box.alignBottomLeft.make(),
+         20.h.heightBox,
+         ElevatedButton(
+           onPressed: () {},
+           style: const ButtonStyle(
+               backgroundColor: MaterialStatePropertyAll(Colors.green)),
+           child: Text(
+             "CheckOut($items)",
+             style: TextStyle(fontSize: 20.h),
+           ),
+         ).box.rounded.size(400.h, 50.h).make(),
+       ],),
+     ],
+
     );
   }
 }
