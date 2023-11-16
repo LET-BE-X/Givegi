@@ -57,6 +57,7 @@ class _EditProfileState extends State<EditProfile> {
                       shape: BoxShape.circle,
                     ),
                     child: ClipOval(
+                      
                       child: controller.profileimgpath.isEmpty
                           ? Image.asset(
                               profilepic,
@@ -95,13 +96,10 @@ class _EditProfileState extends State<EditProfile> {
 
                 ]),
               ),
-              Gap(5.h),
+              Gap(15.h),
               customtextbox(hint: "First Name", ispass: false),
-              Gap(5.h),
               customtextbox(hint: "Last Name", ispass: false),
-              Gap(5.h),
               customtextbox(hint: "Email Id", ispass: false),
-              Gap(5.h),
               Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -115,7 +113,6 @@ class _EditProfileState extends State<EditProfile> {
                       .make()
                 ],
               ),
-              Gap(5.h),
               Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -125,14 +122,14 @@ class _EditProfileState extends State<EditProfile> {
                       ispass: false,
                       type: TextInputType.number),
                   "Change Phone Number"
-                      .text
+                      .text.ellipsis
                       .start
                       .size(16)
                       .color(Colors.green)
-                      .make()
+                      .make().onTap(() { })
                 ],
               ),
-              Gap(5.h),
+
               customtextbox(
                 hint: DateFormat.yMd().format(_selecteddate),
                 ispass: false,
@@ -143,7 +140,7 @@ class _EditProfileState extends State<EditProfile> {
                   },
                 ),
               ),
-              Gap(10.h),
+              
             ],
           ),
         ),
