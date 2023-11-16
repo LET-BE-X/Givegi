@@ -29,14 +29,17 @@ class HomeTopBar extends StatelessWidget {
                 height: 50.h,
                 child: SearchBar(
                   shape: MaterialStatePropertyAll(RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.h))),
-                 elevation: MaterialStateProperty.all(2),
+                 elevation: MaterialStateProperty.all(2.h),
                   hintText: "Search Products",
                   hintStyle: MaterialStateProperty.all(const TextStyle(color: Colors.grey,fontWeight: FontWeight.normal,)),
                 leading: Icon(Icons.search,color: Colors.grey,size: 25.h,),
                   surfaceTintColor:MaterialStateProperty.all(hometopcolor),),
               ),
               Gap(40.h),
-              InkWell(child: Image.asset(cartbag,height: 40.h,),onTap: (){
+              InkWell(child: Stack(fit: StackFit.passthrough,alignment: Alignment.topRight,
+                  children:[ Image.asset(cartbag,height: 50.h,),CircleAvatar(
+                    backgroundColor: const Color(0xffFF1414),
+                      radius: 9.h,child: Text("99+",style: TextStyle(color: Colors.black,fontSize: 9.h,fontWeight: FontWeight.w600),))]),onTap: (){
                 Get.to(()=>const CartScreen());
               },)
             ],
