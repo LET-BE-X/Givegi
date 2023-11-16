@@ -33,7 +33,7 @@ class HomeTopBar extends StatelessWidget {
                   hintText: "Search Products",
                   hintStyle: MaterialStateProperty.all(const TextStyle(color: Colors.grey,fontWeight: FontWeight.normal,)),
                 leading: Icon(Icons.search,color: Colors.grey,size: 25.h,),
-                  overlayColor:MaterialStateProperty.all(hometopcolor),),
+                  surfaceTintColor:MaterialStateProperty.all(hometopcolor),),
               ),
               Gap(40.h),
               InkWell(child: Image.asset(cartbag,height: 40.h,),onTap: (){
