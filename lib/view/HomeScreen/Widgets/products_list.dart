@@ -9,7 +9,7 @@ import 'package:velocity_x/velocity_x.dart';
 import '../../../utils/ListConst.dart';
 
 class ProductList extends StatelessWidget {
-   ProductList({Key? key}) : super(key: key);
+   const ProductList({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -55,7 +55,7 @@ class ProductList extends StatelessWidget {
                   size: 20.h,
                 ),
                 Text(
-                  featureproductrating[index] + " /(5)",
+                  "${featureproductrating[index]} /(5)",
                   style: TextStyle(
                     fontFamily: Vx.blackHex,
                     fontSize: 15.h,
@@ -73,7 +73,7 @@ class ProductList extends StatelessWidget {
                 .make()
                 .marginOnly(left: 5.h),
             10.h.heightBox,
-            offer==true?Container(decoration: BoxDecoration(shape: BoxShape.rectangle,color: Colors.white,border: Border.all(width: 1.3,color: Colors.grey)),width: 100.h,height: 25.h,child: Center(child: customText(myText: "Free Shipping",size: 14.h)),):Container()
+            offer==true?Container(decoration: BoxDecoration(shape: BoxShape.rectangle,color: Colors.white,border: Border.all(width: 1.3.h,color: Colors.grey)),width: 100.h,height: 25.h,child: Center(child: customText(myText: "Free Shipping",size: 14.h)),):Container()
 
           ],
         )
