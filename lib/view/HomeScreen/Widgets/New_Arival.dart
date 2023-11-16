@@ -21,10 +21,10 @@ class NewArival extends StatelessWidget {
         children: List.generate(
             6,
             (index) => Card(
-                  elevation: 1,
+                  elevation: 2,
                   child: SizedBox(
                     height: 250.h,
-                    width: 220.h,
+                    width: 210.h,
                     child: Row(
                       children: [
                         Column(
@@ -34,7 +34,7 @@ class NewArival extends StatelessWidget {
                             Center(
                                 child: Image.asset(
                               featureproductimage[index],
-                              width: 130.w,
+                              width: 140.w,
                               height: 130.h,
                               fit: BoxFit.cover,
                             )),
@@ -42,7 +42,7 @@ class NewArival extends StatelessWidget {
                             featureproductname[index]
                                 .text
                                 .bold
-                                .size(22.h)
+                                .size(20.h)
                                 .make(),
                             Gap(5.h),
                             "Description"
@@ -57,12 +57,12 @@ class NewArival extends StatelessWidget {
                                 .color(Colors.black87)
                                 .make()
                           ],
-                        ).onTap(() {}).marginOnly(left: 18.w, bottom: 20.h),
+                        ).onTap(() {}).marginOnly(left: 10.w, bottom: 10.h),
                         Gap(10.h),
                       ],
                     ),
                   ),
-                ).box.padding(EdgeInsets.only(left: 10.h, top: 10.h)).make()),
+                ).box.padding(EdgeInsets.only(left: 5.w, top: 10.h)).make()),
       ),
     );
   }

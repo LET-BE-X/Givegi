@@ -18,36 +18,28 @@ class HomeTopBar extends StatelessWidget {
       color: hometopcolor,
       child: Column(
         children: [
-          Gap(25.h),
-          Image.asset(logo,height: 50.h,width: 90.h,),
+          Gap(20.h),
+          Image.asset(logo,height: 60.h,width: 95.h,),
           Gap(10.h),
           Row(
             children: [
               Gap(20.h),
               SizedBox(
-                width: 315.h,
+                width: 335.h,
                 height: 50.h,
-                child: TextFormField(
-
-                  style:const TextStyle(color: Colors.black),
-                  decoration: InputDecoration(
-                      border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(15.h),
-                          borderSide: BorderSide.none),
-                      prefixIcon: Icon(
-                        Icons.search,
-                        color: Colors.green,
-                        size: 30.h,
-                      ),
-                      suffixIconColor: Colors.green,
-                      filled: true,
-                      fillColor: Colors.white,
-                      hintText: "Search Product",
-                      hintStyle:const TextStyle(color: Colors.grey)),
-                ),
+                child: SearchBar(
+                  shape: MaterialStatePropertyAll(RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.h))),
+                 elevation: MaterialStateProperty.all(2.h),
+                  hintText: "Search Products",
+                  hintStyle: MaterialStateProperty.all(const TextStyle(color: Colors.grey,fontWeight: FontWeight.normal,)),
+                leading: Icon(Icons.search,color: Colors.grey,size: 25.h,),
+                  surfaceTintColor:MaterialStateProperty.all(hometopcolor),),
               ),
-              Gap(20.h),
-              InkWell(child: Image.asset(cartbag,height: 40.h,),onTap: (){
+              Gap(40.h),
+              InkWell(child: Stack(fit: StackFit.passthrough,alignment: Alignment.topRight,
+                  children:[ Image.asset(cartbag,height: 50.h,),CircleAvatar(
+                    backgroundColor: const Color(0xffFF1414),
+                      radius: 9.h,child: Text("99+",style: TextStyle(color: Colors.black,fontSize: 9.h,fontWeight: FontWeight.w600),))]),onTap: (){
                 Get.to(()=>const CartScreen());
               },)
             ],

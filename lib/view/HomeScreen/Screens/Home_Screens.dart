@@ -11,6 +11,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';
 import 'package:get/get.dart';
+import 'package:velocity_x/velocity_x.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -43,32 +44,34 @@ class HomePage extends StatelessWidget {
                 children: [
                   customText(
                       myText: 'New Arrivals',
-                      size: 26,
+                      size: 24.h,
                       fontWeight: FontWeight.w500),
                   InkWell(
+                    onTap: (){},
                       child: Row(
                     children: [
                       Text(
                         "Explore All",
                         style: TextStyle(
-                            fontSize: 15, fontWeight: FontWeight.w500),
+                            fontSize: 13.h, fontWeight: FontWeight.w500),
                       ),
                       Icon(
                         Icons.arrow_forward_ios_outlined,
                         color: Colors.purple,
+                        size: 13.h,
                       )
                     ],
                   )),
                 ],
-              ).marginOnly(left: 15, right: 15),
+              ).marginOnly(left: 15.w, right: 15.h),
               Gap(10.h),
               NewArival(),
               Gap(20.h),
               customText(
                       myText: 'Popular Categories',
-                      size: 30,
+                      size: 25.h,
                       fontWeight: FontWeight.w500)
-                  .marginOnly(left: 15),
+                  .marginOnly(left: 10.h),
               Gap(10.h),
               PopularCategories(),
               Gap(10.h),

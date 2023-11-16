@@ -2,6 +2,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../utils/ListConst.dart';
 
 class Swiper extends StatefulWidget {
@@ -18,8 +19,8 @@ class _SwiperState extends State<Swiper> {
     return CarouselSlider(
       items: sliderlist.map((item)=>Image.asset(item,fit: BoxFit.cover,width: double.infinity,)).toList(),
       options: CarouselOptions(enlargeStrategy: CenterPageEnlargeStrategy.height,
-        height: 200,
-        aspectRatio: 1,
+        height: 200.h,
+        aspectRatio: 16/9,
         viewportFraction: 1,
         initialPage: 0,
         enableInfiniteScroll: true,
@@ -29,7 +30,7 @@ class _SwiperState extends State<Swiper> {
         autoPlayAnimationDuration:const Duration(milliseconds: 800),
         autoPlayCurve: Curves.linear,
         enlargeCenterPage: true,
-        enlargeFactor: 16/9,
+        enlargeFactor: 1,
 
         // onPageChanged: callbackFunction,
         scrollDirection: Axis.horizontal,
