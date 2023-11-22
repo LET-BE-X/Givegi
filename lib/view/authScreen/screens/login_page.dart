@@ -9,6 +9,7 @@ import 'package:ecommercegiveji/view/authScreen/widgets/custom_button.dart';
 import 'package:ecommercegiveji/view/authScreen/widgets/custom_stack.dart';
 import 'package:ecommercegiveji/view/authScreen/widgets/custon_textfield.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:velocity_x/velocity_x.dart';
 
@@ -29,12 +30,15 @@ class LoginScreen extends StatelessWidget {
             decoration: InputDecoration(
               hintText: 'xyz@gmail.com',
             ),
+            ispass: false,
           ),
-          20.heightBox,
+          20.h.heightBox,
           CustomTextfield(
-            decoration:const InputDecoration(suffixIcon: Icon(Icons.visibility)),
+            decoration:const InputDecoration(suffixIcon: Icon(Icons.visibility),hintText: "Password"),
+            ispass: true,
+
           ),
-          15.heightBox,
+          15.h.heightBox,
           GestureDetector(
             onTap: () {
               Get.to(() => const ForgetPass());
@@ -42,11 +46,11 @@ class LoginScreen extends StatelessWidget {
             child: customText(
               color: kGreenColor,
               myText: 'Forgot Password?',
-              size: 19,
+              size: 19.h,
               fontWeight: FontWeight.w500,
             ),
           ),
-          30.heightBox,
+          30.h.w.heightBox,
           MyButton(
             ontap: () {
               Get.to(() =>const Home());
@@ -63,12 +67,12 @@ class LoginScreen extends StatelessWidget {
             child: customText(
               color: kGreenColor,
               myText: ' Don\'t have an account?Signup',
-              size: 18,
+              size: 18.h,
               fontWeight: FontWeight.w500,
             ),
           )
         ],
-      ).marginOnly(left: 50, right: 50, top: 30)),
+      ).marginOnly(left: 50.h, right: 50.h, top: 30.h)),
     );
   }
 }

@@ -2,15 +2,18 @@
 import 'package:flutter/material.dart';
 
 class CustomTextfield extends StatelessWidget {
+  bool ispass;
   InputDecoration? decoration;
   CustomTextfield( {
     Key? key,
-   this.decoration
+   this.decoration,
+    required this.ispass
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return  TextField(
+    return  TextFormField(
+      obscureText: ispass,
       decoration: decoration,
     );
   }
