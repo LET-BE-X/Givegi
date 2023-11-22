@@ -44,7 +44,7 @@ class _SignupScreenState extends State<SignupScreen> {
                     focusColor: Colors.grey,
                     enabledBorder:
                         OutlineInputBorder(borderSide: BorderSide(width: 0.8)),
-                    focusedBorder: OutlineInputBorder())),
+                    focusedBorder: OutlineInputBorder()),ispass: false),
             30.h.heightBox,
             MyButton(
               ontap: () {

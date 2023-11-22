@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 Widget customText(
     {String? myText,
+      TextStyle? Style,
     TextAlign? align,
     double? size,
     FontWeight? fontWeight,
@@ -10,7 +11,7 @@ Widget customText(
   return Text(
     myText!,
     textAlign: align,
-    style: TextStyle(
-        fontSize: size, color: color ?? Colors.black, fontWeight: fontWeight),
+    style: Style==null?TextStyle(
+        fontSize: size, color: color ?? Colors.black, fontWeight: fontWeight):Style,
   );
 }

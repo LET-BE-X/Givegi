@@ -31,7 +31,7 @@ class _ForgetPassState extends State<ForgetPass> {
               size: 18),
           40.heightBox,
           CustomTextfield(
-            decoration: const InputDecoration(hintText: 'E-mail Id'),
+            decoration: const InputDecoration(hintText: 'E-mail Id'),ispass: false,
           ),
           30.heightBox,
           MyButton(

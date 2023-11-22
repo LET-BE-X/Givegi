@@ -46,7 +46,7 @@ class _CartScreenState extends State<CartScreen> {
      persistentFooterButtons: [
 
        Column(children: [
-         customText(myText: "Subtotal:Nrs.502000",size: 20).box.alignBottomLeft.make(),
+         customText(myText: "Subtotal:Nrs.502000",size: 20,Style: TextStyle(fontWeight: FontWeight.w500,fontSize: 28.h.w)).box.alignBottomLeft.make(),
          20.h.heightBox,
          ElevatedButton(
            onPressed: () {},
@@ -54,9 +54,9 @@ class _CartScreenState extends State<CartScreen> {
                backgroundColor: MaterialStatePropertyAll(Colors.green)),
            child: Text(
              "CheckOut($items)",
-             style: TextStyle(fontSize: 20.h),
+             style: TextStyle(fontSize: 24.h.w),
            ),
-         ).box.rounded.size(400.h, 50.h).make(),
+         ).box.rounded.size(450.h.w, 50.h.w).make(),
        ],),
      ],
 

@@ -19,8 +19,8 @@ class HomeTopBar extends StatelessWidget {
       child: Column(
         children: [
           Gap(20.h),
-          Image.asset(logo,height: 60.h,width: 95.h,),
-          Gap(10.h),
+          Image.asset(logo,height: 60.h,width: 110.h,),
+          Gap(15.h),
           Row(
             children: [
               Gap(20.h),
@@ -29,7 +29,7 @@ class HomeTopBar extends StatelessWidget {
                 height: 50.h,
                 child: SearchBar(
                   shape: MaterialStatePropertyAll(RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.h))),
-                 elevation: MaterialStateProperty.all(2.h),
+                 elevation: MaterialStateProperty.all(16/9.h),
                   hintText: "Search Products",
                   hintStyle: MaterialStateProperty.all(const TextStyle(color: Colors.grey,fontWeight: FontWeight.normal,)),
                 leading: Icon(Icons.search,color: Colors.grey,size: 25.h,),
