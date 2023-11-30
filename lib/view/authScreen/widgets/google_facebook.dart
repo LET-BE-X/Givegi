@@ -10,12 +10,14 @@ class Google_facebook extends StatelessWidget {
   final String asset;
   final String text;
   void Function()? ontap;
+  Color color;
   Google_facebook({
     Key? key,
     this.width,
     required this.asset,
     required this.text,
     required this.ontap,
+    required this.color
   }) : super(key: key);
 
   @override
@@ -28,7 +30,7 @@ class Google_facebook extends StatelessWidget {
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(8),
             border: Border.all(
-              width: 0.8,
+              width: 0.4,color: color
             )),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
