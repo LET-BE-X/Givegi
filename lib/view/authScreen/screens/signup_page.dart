@@ -42,10 +42,10 @@ class _SignupScreenState extends State<SignupScreen> {
             CustomTextfield(
                 decoration: const InputDecoration(
                     focusColor: Colors.grey,
-                    enabledBorder:
-                        OutlineInputBorder(borderSide: BorderSide(width: 0.4)),
+
+                        OutlineInputBorder(borderSide: BorderSide(width: 0.8)),
                     focusedBorder: OutlineInputBorder()),ispass: false),
-            30.h.w.heightBox,
+            30.h.heightBox,
             MyButton(
               ontap: () {
                 Get.to(() => New_accScreen());
