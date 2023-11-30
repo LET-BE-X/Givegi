@@ -42,8 +42,7 @@ class _SignupScreenState extends State<SignupScreen> {
             CustomTextfield(
                 decoration: const InputDecoration(
                     focusColor: Colors.grey,
-
-                        OutlineInputBorder(borderSide: BorderSide(width: 0.8)),
+                    border: OutlineInputBorder(borderSide: BorderSide(width: 0.8)),
                     focusedBorder: OutlineInputBorder()),ispass: false),
             30.h.heightBox,
             MyButton(

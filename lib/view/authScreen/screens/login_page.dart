@@ -53,7 +53,7 @@ class LoginScreen extends StatelessWidget {
           30.h.w.heightBox,
           MyButton(
             ontap: () {
-              Get.to(() =>const Home());
+              Get.offAll(() =>const Home());
             },
             height: 50,
             width: 344,

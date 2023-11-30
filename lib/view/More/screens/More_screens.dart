@@ -1,3 +1,4 @@
+import 'package:ecommercegiveji/view/More/widgets/customer_care.dart';
 import 'package:flutter/material.dart';
 
 class MoreScreen extends StatelessWidget {
@@ -6,7 +7,7 @@ class MoreScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.yellow,
+      child: CustomerCare(),
     );
   }
 }
