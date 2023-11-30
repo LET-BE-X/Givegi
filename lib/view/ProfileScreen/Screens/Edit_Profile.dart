@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'package:ecommercegiveji/view/authScreen/widgets/customText.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';
@@ -26,15 +27,15 @@ class _EditProfileState extends State<EditProfile> {
     return Obx(
       () => Scaffold(
         appBar: AppBar(
-          toolbarHeight: 70.h,
+          toolbarHeight: 70.h.w,
           backgroundColor: Colors.white,
           title: Row(
             children: [
-              Gap(65.h),
+              Gap(65.h.w),
                Text(
                 "Edit Profile",
                 style: TextStyle(
-                    fontSize: 28.h,
+                    fontSize: 28.h.w,
                     color: Colors.black,
                     fontWeight: FontWeight.w600),
               ),
@@ -46,12 +47,12 @@ class _EditProfileState extends State<EditProfile> {
           scrollDirection: Axis.vertical,
           child: Column(
             children: [
-              Gap(20.h),
+              Gap(20.h.w),
               Center(
                 child: Stack(children: [
                   Container(
-                    width: 130.h,
-                    height: 130.h,
+                    width: 130.h.w,
+                    height: 130.h.w,
                     decoration: BoxDecoration(
                       border: Border.all(width: 4.h, color: Colors.white),
                       shape: BoxShape.circle,
@@ -73,8 +74,8 @@ class _EditProfileState extends State<EditProfile> {
                       bottom: 0,
                       right: 0,
                       child: Container(
-                        height: 40.h,
-                        width: 50.h,
+                        height: 40.h.w,
+                        width: 50.h.w,
                         decoration: BoxDecoration(
                             shape: BoxShape.circle,
                             border: Border.all(
@@ -96,7 +97,7 @@ class _EditProfileState extends State<EditProfile> {
 
                 ]),
               ),
-              Gap(15.h),
+              Gap(15.h.w),
               customtextbox(hint: "First Name", ispass: false),
               customtextbox(hint: "Last Name", ispass: false),
               customtextbox(hint: "Email Id", ispass: false),
@@ -105,12 +106,12 @@ class _EditProfileState extends State<EditProfile> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   customtextbox(hint: "password", ispass: true),
-                  "Change Password"
-                      .text
-                      .start
-                      .size(16)
-                      .color(Colors.green)
-                      .make()
+                  Row(
+                    children: [
+                      Gap(30.w),
+                      customText(myText: "Change Password",color: Colors.green,size: 18.h.w),
+                    ],
+                  )
                 ],
               ),
               Column(
@@ -121,12 +122,13 @@ class _EditProfileState extends State<EditProfile> {
                       hint: "Phone Number",
                       ispass: false,
                       type: TextInputType.number),
-                  "Change Phone Number"
-                      .text.ellipsis
-                      .start
-                      .size(16)
-                      .color(Colors.green)
-                      .make().onTap(() { })
+
+                  Row(
+                    children: [
+                      Gap(30.w),
+                      customText(myText: "Change Phone Number",color: Colors.green,size: 18.h.w),
+                    ],
+                  )
                 ],
               ),
 
@@ -152,7 +154,7 @@ class _EditProfileState extends State<EditProfile> {
               onPressed: () {},
               child: Text(
                 "Save Change",
-                style:  TextStyle(fontSize: 28.h, fontWeight: FontWeight.bold),
+                style:  TextStyle(fontSize: 28.h.w, fontWeight: FontWeight.bold),
               ),
             )),
       ),

@@ -38,23 +38,23 @@ class _SignupScreenState extends State<SignupScreen> {
                 myText: 'Lets start, create your Giveji Account',
                 fontWeight: FontWeight.bold,
                 size: max(14.w, 20.h)),
-            30.h.heightBox,
+            30.h.w.heightBox,
             CustomTextfield(
                 decoration: const InputDecoration(
                     focusColor: Colors.grey,
                     enabledBorder:
-                        OutlineInputBorder(borderSide: BorderSide(width: 0.8)),
+                        OutlineInputBorder(borderSide: BorderSide(width: 0.4)),
                     focusedBorder: OutlineInputBorder()),ispass: false),
-            30.h.heightBox,
+            30.h.w.heightBox,
             MyButton(
               ontap: () {
                 Get.to(() => New_accScreen());
               },
-              height: 55,
+              height: 55.h.w,
               width: double.infinity,
               text: 'Create Account',
             ),
-            20.heightBox,
+            20.h.w.heightBox,
             Center(
               child: customText(
                 color: Colors.grey,
@@ -62,13 +62,14 @@ class _SignupScreenState extends State<SignupScreen> {
                 size: 20,
               ),
             ),
-            25.h.heightBox,
+            25.h.w.heightBox,
             Google_facebook(
                 width: 400,
                 asset: svgMail,
-                text: 'CONTINUE WITH EMAIL',
+                text: 'CONTINUE WITH EMAIL',color: logincolor,
+
                 ontap: () {}),
-            30.heightBox,
+            30.h.w.heightBox,
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -76,15 +77,16 @@ class _SignupScreenState extends State<SignupScreen> {
                   ontap: () {},
                   asset: svgGoogle,
                   text: 'GOOGLE',
+                  color: logincolor,
                 ),
                 Google_facebook(
                   ontap: () {},
                   asset: svgFacebook,
-                  text: 'FACEBOOK',
+                  text: 'FACEBOOK',color: logincolor,
                 )
               ],
             ),
-            20.heightBox,
+            20.h.w.heightBox,
             customText(
               color: Colors.black,
               myText:

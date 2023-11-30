@@ -3,6 +3,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:gap/gap.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 Widget customtextbox({String? hint, controller, ispass, type, Widget? widget}) {
@@ -13,6 +14,7 @@ Widget customtextbox({String? hint, controller, ispass, type, Widget? widget}) {
       7.h.heightBox,
       Row(
         children: [
+          Gap(30.h.w),
           TextFormField(
             keyboardType: type,
             obscureText: ispass,
@@ -21,7 +23,7 @@ Widget customtextbox({String? hint, controller, ispass, type, Widget? widget}) {
 
             decoration: InputDecoration(
               contentPadding: EdgeInsets.only(left: 10.h),
-              constraints: BoxConstraints.expand(width: 360.h, height: 70.h),
+              constraints: BoxConstraints.expand(width: 370.h, height: 70.h),
               hintStyle:
                   TextStyle(fontWeight: FontWeight.w600, color: Colors.black),
               hintText: hint,
